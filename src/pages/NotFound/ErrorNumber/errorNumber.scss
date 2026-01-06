@@ -1,0 +1,19 @@
+.error-number {
+  width: 200px;
+  height: fit-content;
+  padding: 60px 0 70px;
+  &__digit {
+    width: 100%;
+    height: fit-content;
+    font-size: 96px;
+    font-weight: bold;
+    margin: 0 5px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) and (max-height: 450px) {
+  .error-number {
+    display: none;
+  }
+}

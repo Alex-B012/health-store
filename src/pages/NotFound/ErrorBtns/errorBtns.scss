@@ -1,0 +1,45 @@
+@import "../../../styles/variables";
+
+.error-btns {
+  gap: 20px;
+  padding: 40px 0 20px;
+
+  &__link {
+    padding: 10px 20px;
+    // border: 1px solid $secondary-color;
+    border-radius: 4px;
+    text-decoration: none;
+    // color: $third-color;
+    // background-color: $secondary-color;
+    transition: background-color 1.5s ease;
+
+    &:hover {
+      // background-color: darken($secondary-color--active, 5%);
+      transition: background-color 1s ease;
+    }
+  }
+
+  &__link:last-child {
+    background-color: white;
+    // color: $primary-color;
+    transition: background-color 1.5s ease;
+
+    &:hover {
+      // color: $third-color;
+      // background-color: darken($secondary-color--active, 5%);
+      transition: background-color 1s ease;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .error-btns {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 900px) and (max-height: 450px) {
+  .error-btns {
+    padding: 0px 0 20px;
+  }
+}
