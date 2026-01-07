@@ -15,3 +15,4 @@ export const productImages: { [key: string]: string } = {
    viponefron_img: viponefron_img,
    aminoprom_img: aminoprom_img,
 }
+

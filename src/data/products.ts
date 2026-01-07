@@ -29,11 +29,11 @@ export const products = [
    {
       id: 2,
       date_added: "2025-01-07",
-      dosage_form: "Нестероидный противовоспалительный препарат",
+      dosage_form: "Вагинальные свечи",
       title_data: {
-         name: "Инотекс",
+         name: "Фенолайф",
          ingredients: "Теноксикам",
-         doze: "20 мг",
+         doze: "6 вагинальных суппозиториев",
          properties: [
             "Быстрое обезболивание",
             "Продолжительноедействие",
@@ -42,7 +42,7 @@ export const products = [
             "Меньшая нагрузка на желудочно-кишечный тракт",
          ],
       },
-      image: productImages.inotex_img,
+      image: productImages.fenolive_img,
       ingredients: {
          text: "1 флакон содержит:",
          items: [
@@ -54,11 +54,11 @@ export const products = [
    {
       id: 3,
       date_added: "2025-01-07",
-      dosage_form: "Нестероидный противовоспалительный препарат",
+      dosage_form: "Раствор для инъекций",
       title_data: {
-         name: "Инотекс",
-         ingredients: "Теноксикам",
-         doze: "20 мг",
+         name: "Цитикомед",
+         ingredients: "Цитиколин",
+         doze: "1000 мг/4 мл",
          properties: [
             "Быстрое обезболивание",
             "Продолжительноедействие",
@@ -67,7 +67,7 @@ export const products = [
             "Меньшая нагрузка на желудочно-кишечный тракт",
          ],
       },
-      image: productImages.inotex_img,
+      image: productImages.citikomed_img,
       ingredients: {
          text: "1 флакон содержит:",
          items: [
@@ -79,11 +79,11 @@ export const products = [
    {
       id: 4,
       date_added: "2025-01-07",
-      dosage_form: "Нестероидный противовоспалительный препарат",
+      dosage_form: "Средство для лечения хронического простатита",
       title_data: {
-         name: "Инотекс",
+         name: "Андропрост Плюс",
          ingredients: "Теноксикам",
-         doze: "20 мг",
+         doze: "10 суппозиториев",
          properties: [
             "Быстрое обезболивание",
             "Продолжительноедействие",
@@ -92,7 +92,7 @@ export const products = [
             "Меньшая нагрузка на желудочно-кишечный тракт",
          ],
       },
-      image: productImages.inotex_img,
+      image: productImages.androprostPlus_img,
       ingredients: {
          text: "1 флакон содержит:",
          items: [
@@ -104,11 +104,11 @@ export const products = [
    {
       id: 5,
       date_added: "2025-01-07",
-      dosage_form: "Нестероидный противовоспалительный препарат",
+      dosage_form: "Биологически активная добавка",
       title_data: {
-         name: "Инотекс",
-         ingredients: "Теноксикам",
-         doze: "20 мг",
+         name: "Андросан",
+         ingredients: "На основе растительных экстрактов",
+         doze: "30 Капсул",
          properties: [
             "Быстрое обезболивание",
             "Продолжительноедействие",
@@ -117,7 +117,7 @@ export const products = [
             "Меньшая нагрузка на желудочно-кишечный тракт",
          ],
       },
-      image: productImages.inotex_img,
+      image: productImages.androsan_img,
       ingredients: {
          text: "1 флакон содержит:",
          items: [
@@ -129,11 +129,11 @@ export const products = [
    {
       id: 6,
       date_added: "2025-01-07",
-      dosage_form: "Нестероидный противовоспалительный препарат",
+      dosage_form: "Растительный препарат для защиты мочевыделительной системы",
       title_data: {
-         name: "Инотекс",
+         name: "Випонефрон",
          ingredients: "Теноксикам",
-         doze: "20 мг",
+         doze: "60 Капсул",
          properties: [
             "Быстрое обезболивание",
             "Продолжительноедействие",
@@ -142,7 +142,7 @@ export const products = [
             "Меньшая нагрузка на желудочно-кишечный тракт",
          ],
       },
-      image: productImages.inotex_img,
+      image: productImages.viponefron_img,
       ingredients: {
          text: "1 флакон содержит:",
          items: [
@@ -154,11 +154,11 @@ export const products = [
    {
       id: 7,
       date_added: "2025-01-07",
-      dosage_form: "Нестероидный противовоспалительный препарат",
+      dosage_form: "Добавка для парентерального питания",
       title_data: {
-         name: "Инотекс",
-         ingredients: "Теноксикам",
-         doze: "20 мг",
+         name: "Аминоприм",
+         ingredients: "АМИНОКИСЛОТЫ 5% И СОРБИТОЛ 5%",
+         doze: "200 мг",
          properties: [
             "Быстрое обезболивание",
             "Продолжительноедействие",
@@ -167,7 +167,7 @@ export const products = [
             "Меньшая нагрузка на желудочно-кишечный тракт",
          ],
       },
-      image: productImages.inotex_img,
+      image: productImages.aminoprom_img,
       ingredients: {
          text: "1 флакон содержит:",
          items: [
@@ -177,3 +177,5 @@ export const products = [
       }
    }
 ];
+
+

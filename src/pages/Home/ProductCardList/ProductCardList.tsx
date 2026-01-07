@@ -9,7 +9,7 @@ function ProductCardList({ data }: ProductCardListProps) {
    return (
       <div className='product-card-list'>
          {data?.map((product) => (
-            <ProductCard product={product} />
+            <ProductCard product={product} key={product.id} />
          ))}
       </div>
    )
