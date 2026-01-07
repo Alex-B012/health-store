@@ -1,0 +1,33 @@
+.logo-full {
+  width: 100%;
+  height: fit-content;
+  max-height: 150px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  &__img {
+    min-width: 250px;
+    margin-top: -40px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .logo-full {
+    max-height: 200px;
+
+    &__img {
+      min-width: 300px;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .logo-full {
+    max-height: 250px;
+
+    &__img {
+      min-width: 350px;
+    }
+  }
+}

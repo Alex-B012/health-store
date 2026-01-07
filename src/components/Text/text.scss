@@ -1,0 +1,45 @@
+@import "../../styles/variables";
+.text {
+  width: 100%;
+  padding: 30px 8% 20px;
+
+  &__title {
+    width: 100%;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: $product-card-title-color;
+  }
+
+  &--center {
+    text-align: center;
+  }
+  &--right {
+    text-align: right;
+  }
+
+  &__content {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .text {
+    &__title {
+      font-size: 18px;
+    }
+
+    &__content {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .text {
+    padding: 30px 10% 20px;
+  }
+}

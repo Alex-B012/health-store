@@ -1,5 +1,5 @@
 import logo_svg from '../assets/logo_only-fixed.svg';
-
+import logo_text from '../assets/logo_text-fixed.svg';
 
 export const profileData = {
    name: "AKIS Pharma",
@@ -13,6 +13,7 @@ export const profileData = {
       line2: "Все права защищены"
    },
    logo: logo_svg,
+   logo_text: logo_text,
 
 }
 
@@ -38,3 +39,7 @@ export const socialMedia = [
    { id: 2, name: "VK", url: "https://vk.com" },
    { id: 3, name: "Instagram", url: "https://instagram.com" }
 ];
+
+export const greetingText = {
+   text: ["Мы рады приветствовать вас в нашем интернет-магазине медицинских товаров. В AKIS Pharma мы стремимся обеспечить вас качественными продуктами для поддержания вашего здоровья и благополучия. Наш ассортимент включает широкий выбор лекарств и товаров для ухода за здоровьем. Мы гордимся нашим профессиональным подходом и вниманием к потребностям каждого клиента. Спасибо, что выбрали AKIS Pharma – ваш надежный партнер на пути к здоровью!"],
+}
