@@ -1,0 +1,29 @@
+@import "../../styles/variables.scss";
+
+.loading {
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: 700;
+    color: $product-card-title-color;
+  }
+}
+
+@media screen and (max-width: 1100px) and (max-height: 450px) {
+  .loading {
+    .logo-full {
+      margin-top: -55px;
+    }
+
+    &__text {
+      margin-top: -15px;
+    }
+  }
+}

@@ -1,28 +1,23 @@
-@import "../../styles/variables";
+@import "../../../styles/variables";
 
-.text {
-  width: 100%;
+.ProductPageTitles {
+  width: 90%;
   padding: 30px 8% 20px;
 
   &__title {
     width: 100%;
     font-size: 17px;
     font-weight: 700;
-    margin-bottom: 20px;
+    padding: 15px 0;
     text-transform: uppercase;
     color: $product-card-title-color;
-  }
 
-  &--center {
-    text-align: center;
-  }
-  &--right {
-    text-align: right;
-  }
-
-  &__content {
-    font-size: 15px;
-    line-height: 20px;
+    &--center {
+      text-align: center;
+    }
+    &--right {
+      text-align: right;
+    }
   }
 }
 
@@ -31,16 +26,11 @@
     &__title {
       font-size: 18px;
     }
-
-    &__content {
-      font-size: 16px;
-      line-height: 22px;
-    }
   }
 }
 
 @media screen and (min-width: 1300px) {
-  .text {
+  .ProductPageTitles {
     padding: 30px 10% 20px;
   }
 }

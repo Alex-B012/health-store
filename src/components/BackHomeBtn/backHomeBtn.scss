@@ -1,0 +1,19 @@
+@import "../../styles/variables.scss";
+
+.backHomeBtn {
+  width: 90%;
+  padding: 20px 0;
+
+  &__link {
+    font-size: 14px;
+    color: $home-page-link-color;
+    text-decoration: none;
+    transition: all 1.5s ease;
+
+    &:hover {
+      color: $home-page-link-color-hover;
+      text-decoration: underline;
+      transition: all 0.7s ease;
+    }
+  }
+}
