@@ -1,3 +1,5 @@
+import logo_svg from '../assets/logo_only-fixed.svg';
+
 
 export const profileData = {
    name: "AKIS Pharma",
@@ -12,6 +14,7 @@ export const profileData = {
       comma: ", ",
       line2: "Все права защищены"
    },
+   logo: logo_svg,
 
 }
 

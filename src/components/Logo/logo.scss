@@ -1,3 +1,8 @@
-import "./logo.scss";
-import { linksData, profileData } from "../../data/data"
-import { Link } from "react-router-dom";
+.logo__img-wrapper {
+  width: 50px;
+}
+
+.logo__img {
+  width: 60px;
+  height: 100%;
+}

@@ -6,6 +6,8 @@ import NotFound from './pages/NotFound/NotFound';
 
 // import { linksData } from './data/data';
 import useScrollRestoration from './components/useScrollRestoration/useScrollRestoration';
+import Header from './layouts/Header/Header';
+import Footer from './layouts/Footer/Footer';
 
 
 function App() {
@@ -13,14 +15,15 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header"></header>
-      <h1>Welcome to Health Store</h1>
-      {/* <Header /> */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-      {/* <Footer /> */}
+
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
+      <Footer />
     </div>
   );
 }

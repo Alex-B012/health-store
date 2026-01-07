@@ -1,5 +1,5 @@
 import "./logo.scss";
-import { linksData } from "../../data/data"
+import { linksData, profileData } from "../../data/data"
 import { Link } from "react-router-dom";
 
 interface LogoProps {
@@ -14,13 +14,13 @@ function Logo({ name = "", link = false }: LogoProps) {
          {link ?
             <Link className="logo__link" to={linksData[0].url}>
                <div className="logo__img-wrapper">
-                  <img className="logo__img" src={""} alt="Logo" />
+                  <img className="logo__img" src={profileData.logo} alt="Logo" />
                </div>
                {name.length > 0 && <p className={`logo__text`}>{name}</p>}
             </Link> :
             <>
                <div className="logo__img-wrapper">
-                  <img className="logo__img" src={""} alt="Logo" />
+                  <img className="logo__img" src={profileData.logo} alt="Logo" />
                </div>
                {name.length > 0 && <p className={`logo__text`}>{name}</p>}
             </>}
