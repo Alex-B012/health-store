@@ -1,0 +1,30 @@
+.line {
+  width: 95%;
+  height: 1px;
+  background-color: rgb(255, 255, 255, 0.5);
+  border: none;
+}
+
+@media screen and (min-width: 700px) {
+  .line {
+    width: 97%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .line {
+    width: 98%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .line {
+    width: 99%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .line {
+    width: 100%;
+  }
+}

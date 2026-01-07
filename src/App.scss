@@ -1,3 +1,5 @@
+@import "./styles/variables.scss";
+
 * {
   font-family: "Arial", sans-serif;
 }
@@ -64,9 +66,9 @@ body {
   flex-direction: column;
   background: linear-gradient(
     to bottom,
-    #9dc5fe 0%,
-    #ffffff 90vh,
-    #ffffff 100%
+    $main-blue 0%,
+    $white-color 90vh,
+    $white-color 100%
   );
 }
 

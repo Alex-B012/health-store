@@ -6,9 +6,7 @@ export const profileData = {
    name_line1: "AKIS",
    name_line2: "Pharma",
    slogan: "Путь к здоровью нации!",
-   phone: "",
-   email: "info@example.com",
-   address: "fake address 123, City, Country",
+
    rights_reserved: {
       line1: "© 2025 Socks Store",
       comma: ", ",
@@ -25,3 +23,18 @@ export const linksData = [
       name: "Главная"
    }
 ]
+
+export const contactInfo = {
+   name: profileData.name,
+   phone: "+1 (234) 567-8901",
+   email: "info@example.com",
+   address: "fake address 123, City, Country",
+   inn: "ИНН: 1234567890",
+   ogrn: "ОГРН: 1234567890123"
+}
+
+export const socialMedia = [
+   { id: 1, name: "Telegram", url: "https://telegram.com" },
+   { id: 2, name: "VK", url: "https://vk.com" },
+   { id: 3, name: "Instagram", url: "https://instagram.com" }
+];

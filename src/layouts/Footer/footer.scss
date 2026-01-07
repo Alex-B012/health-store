@@ -1,0 +1,85 @@
+@import "../../styles/variables.scss";
+
+.footer {
+  width: 100%;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(
+    -170deg,
+    $footer-blue 0%,
+    $footer-blue 10%,
+    $footer-light-violet 90%,
+    $footer-light-violet 100%
+  );
+
+  &__top {
+    width: 100%;
+  }
+
+  &__middle {
+    width: 100%;
+    height: fit-content;
+    padding: 20px 0 20px 15px;
+  }
+
+  &__contacts-title {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: $footer-heading-color;
+  }
+
+  &__social-media-link {
+    margin-right: 7px;
+  }
+
+  &__contacts-list {
+    display: grid;
+    gap: 20px;
+  }
+
+  &__contacts-item {
+    width: 100%;
+    max-width: 260px;
+    font-size: 14px;
+    color: $white-color;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .footer {
+    &__contacts-list {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .footer {
+    &__contacts-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .footer {
+    &__contacts-list {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .footer {
+    &__middle {
+      padding: 20px 0 20px 5%;
+    }
+  }
+}
