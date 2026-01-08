@@ -1,0 +1,57 @@
+@import "src/styles/mixins.scss";
+@import "src/styles/variables.scss";
+
+.product-page-benefits {
+  width: 100%;
+  @include flex-column-center-center;
+  padding: 30px 0 20px;
+  font-size: 17px;
+  line-height: 20px;
+
+  &__item {
+    width: 100%;
+    padding: 10px 5% 0;
+  }
+
+  &__item-content {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 500;
+  }
+
+  &__number {
+    font-weight: 700;
+    color: $product-page-benefits-text-color;
+  }
+
+  &__text {
+    margin-left: 15px;
+  }
+
+  &__line {
+    height: 1px;
+    border: none;
+    background-color: $product-page-benefits-text-color;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .product-page-benefits {
+    &__item {
+      padding: 10px 8% 0;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .product-page-benefits {
+    font-size: 18px;
+    line-height: 22px;
+
+    &__item {
+      max-width: 600px;
+      min-width: 45%;
+    }
+  }
+}

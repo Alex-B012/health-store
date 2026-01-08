@@ -14,7 +14,7 @@
     font-size: 26px;
     line-height: 28px;
     padding: 0 2%;
-    margin-top: 1vh;
+    margin-top: 5vh;
     text-transform: uppercase;
 
     &--center {
@@ -29,7 +29,7 @@
     width: 100%;
     height: 90px;
     padding: 0 2%;
-    margin: 1vh 0;
+    margin: 0.5vh 0;
     font-size: 20px;
     line-height: 22px;
   }
@@ -37,10 +37,6 @@
 
 @media screen and (min-height: 650px) {
   .product-page-titles {
-    &__title {
-      margin-top: 3vh;
-    }
-
     &__subtitle {
       margin: 3vh 0;
     }
@@ -49,10 +45,6 @@
 
 @media screen and (min-height: 750px) {
   .product-page-titles {
-    &__title {
-      margin-top: 5vh;
-    }
-
     &__subtitle {
       margin: 5vh 0;
     }

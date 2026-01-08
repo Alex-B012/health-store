@@ -2,7 +2,7 @@
 
 .backHomeBtn {
   width: 100%;
-  padding: 20px;
+  padding: 20px 8%;
   z-index: 5;
 
   &__link {
@@ -16,5 +16,11 @@
       text-decoration: underline;
       transition: all 0.7s ease;
     }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .backHomeBtn {
+    padding: 20px 10%;
   }
 }

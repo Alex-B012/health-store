@@ -4,6 +4,7 @@ import BackHomeBtn from '../../components/BackHomeBtn/BackHomeBtn'
 import ProductNotFound from './ProductNotFound/ProductNotFound';
 import ProductPageTitles from './ProductPageTitles/ProductPageTitles';
 import ProductPageImgPromoText from './ProductPageImgText/ProductPageImgText';
+import ProductPageBenefits from './ProductPageBenefits/ProductPageBenefits';
 
 function Product() {
    const productId = window.location.pathname.split("/").pop();
@@ -13,15 +14,21 @@ function Product() {
       <div className="product-page">
          <BackHomeBtn />
          {product ? (
-            <div className="product-page__img-container">
-               <ProductPageTitles
-                  title={product.title_data.name}
-                  subtitle={product.dosage_form}
-                  titlePosition={"center"}
-               />
-               <ProductPageImgPromoText img={product.image} name={product.title_data.name} text={product.dosage_form} />
-
-            </div>
+            <>
+               <div className="product-page__img-container">
+                  <ProductPageTitles
+                     title={product.title_data.name}
+                     subtitle={product.dosage_form}
+                     titlePosition={"center"}
+                  />
+                  <ProductPageImgPromoText
+                     img={product.image}
+                     name={product.title_data.name}
+                     text={product.dosage_form} />
+               </div>
+               <ProductPageBenefits
+                  data={product.title_data.properties} />
+            </>
          ) : (
             <ProductNotFound />
          )}
