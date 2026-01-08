@@ -1,17 +1,18 @@
 @import "../../styles/variables.scss";
 
 .backHomeBtn {
-  width: 90%;
-  padding: 20px 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 5;
 
   &__link {
     font-size: 14px;
-    color: $home-page-link-color;
+    color: $white-color;
     text-decoration: none;
     transition: all 1.5s ease;
 
     &:hover {
-      color: $home-page-link-color-hover;
+      color: $white-color-hover;
       text-decoration: underline;
       transition: all 0.7s ease;
     }

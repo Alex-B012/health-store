@@ -1,16 +1,21 @@
 @import "../../../styles/variables";
+@import "../../../styles/mixins";
 
-.ProductPageTitles {
-  width: 90%;
-  padding: 30px 8% 20px;
+.product-page-titles {
+  width: 100%;
+  margin-top: 150px;
+  @include flex-column-center-center;
+  color: $white-color;
+  font-weight: 700;
 
   &__title {
     width: 100%;
-    font-size: 17px;
-    font-weight: 700;
-    padding: 15px 0;
+    height: 90px;
+    font-size: 26px;
+    line-height: 28px;
+    padding: 0 2%;
+    margin-top: 1vh;
     text-transform: uppercase;
-    color: $product-card-title-color;
 
     &--center {
       text-align: center;
@@ -19,18 +24,129 @@
       text-align: right;
     }
   }
+
+  &__subtitle {
+    width: 100%;
+    height: 90px;
+    padding: 0 2%;
+    margin: 1vh 0;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
-@media screen and (min-width: 600px) {
-  .text {
+@media screen and (min-height: 650px) {
+  .product-page-titles {
     &__title {
-      font-size: 18px;
+      margin-top: 3vh;
+    }
+
+    &__subtitle {
+      margin: 3vh 0;
     }
   }
 }
 
-@media screen and (min-width: 1300px) {
-  .ProductPageTitles {
-    padding: 30px 10% 20px;
+@media screen and (min-height: 750px) {
+  .product-page-titles {
+    &__title {
+      margin-top: 5vh;
+    }
+
+    &__subtitle {
+      margin: 5vh 0;
+    }
+  }
+}
+
+@media screen and (min-height: 850px) {
+  .product-page-titles {
+    &__title {
+      margin-top: 8vh;
+    }
+
+    &__subtitle {
+      margin: 8vh 0;
+    }
+  }
+}
+
+@media screen and (min-height: 950px) {
+  .product-page-titles {
+    &__title {
+      margin-top: 10vh;
+    }
+
+    &__subtitle {
+      margin: 10vh 0;
+    }
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .product-page-titles {
+    &__title {
+      font-size: 30px;
+      line-height: 32px;
+    }
+
+    &__subtitle {
+      font-size: 24px;
+      line-height: 26px;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .product-page-titles {
+    &__title {
+      font-size: 34px;
+      line-height: 36px;
+    }
+
+    &__subtitle {
+      font-size: 28px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .product-page-titles {
+    &__title {
+      margin: 10vh 0;
+    }
+
+    &__subtitle {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .product-page-titles {
+    &__title {
+      font-size: 38px;
+      line-height: 40px;
+    }
+
+    &__subtitle {
+      font-size: 32px;
+      line-height: 34px;
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .product-page-titles {
+    &__title {
+      font-size: 42px;
+      line-height: 44px;
+    }
+
+    &__subtitle {
+      font-size: 36px;
+      line-height: 38px;
+    }
   }
 }

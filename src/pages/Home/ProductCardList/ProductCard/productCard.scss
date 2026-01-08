@@ -1,4 +1,5 @@
 @import "../../../../styles/variables";
+@import "../../../../styles/mixins";
 
 .product-card {
   width: 100%;
@@ -17,18 +18,14 @@
   &__link {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center-top;
     color: $product-card-text-color;
   }
 
   &__img-container {
     width: 100%;
     height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-column-center-center;
     margin-bottom: 10px;
     overflow: hidden;
     border: 1px solid rgba(241, 241, 241, 0.3);

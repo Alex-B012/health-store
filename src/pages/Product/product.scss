@@ -1,8 +1,24 @@
-.productPage {
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.product-page {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flex-column-center-center;
+
+  &__img-container {
+    width: 100%;
+    min-height: 100vh;
+    @include flex-column-center-center;
+    justify-content: flex-start;
+    margin-top: -155px;
+    background: linear-gradient(
+      -150deg,
+      $white-color 0%,
+      $footer-blue 25%,
+      $footer-darker-blue 50%,
+      $footer-blue 75%,
+      $white-color 100%
+    );
+  }
 }

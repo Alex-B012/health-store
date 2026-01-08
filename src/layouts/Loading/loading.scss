@@ -1,12 +1,10 @@
 @import "../../styles/variables.scss";
+@import "../../styles/mixins";
 
 .loading {
   width: 100%;
   min-height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-column-center-center;
 
   &__text {
     margin-top: 15px;
