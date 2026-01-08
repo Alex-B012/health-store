@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&display=swap");
 
 * {
-  font-family: "Arial", sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
 }
 
 html {
@@ -86,5 +86,4 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  overflow-x: hidden;
 }

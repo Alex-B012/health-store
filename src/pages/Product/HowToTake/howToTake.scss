@@ -4,12 +4,12 @@
 .how-to-take {
   width: 100%;
   height: fit-content;
-  padding: 20px 2%;
+  padding: 20px 1.5%;
 
   &__container {
     width: 100%;
     @include flex-column-center-center;
-    padding: 15px 2%;
+    padding: 15px 1%;
     border-radius: 15px;
 
     background: radial-gradient(
@@ -25,7 +25,8 @@
   &__title {
     width: 100%;
     font-size: 30px;
-    line-height: 32px;
+    font-size: 8vw;
+    line-height: 8vw;
     font-weight: 700;
     text-align: left;
   }
@@ -64,8 +65,8 @@
 @media screen and (min-width: 600px) {
   .how-to-take {
     &__title {
-      font-size: 60px;
-      line-height: 62px;
+      font-size: 48px;
+      line-height: 48px;
     }
 
     &__description {
@@ -84,7 +85,6 @@
 }
 
 @media screen and (min-width: 1300px) {
-  .how-to-take {
-    //  padding: 20px 10%;
-  }
+  //   .how-to-take {
+  //   }
 }
