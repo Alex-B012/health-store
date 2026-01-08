@@ -5,6 +5,7 @@ import ProductNotFound from './ProductNotFound/ProductNotFound';
 import ProductPageTitles from './ProductPageTitles/ProductPageTitles';
 import ProductPageImgPromoText from './ProductPageImgText/ProductPageImgText';
 import ProductPageBenefits from './ProductPageBenefits/ProductPageBenefits';
+import HowToTake from './HowToTake/HowToTake';
 
 function Product() {
    const productId = window.location.pathname.split("/").pop();
@@ -24,10 +25,12 @@ function Product() {
                   <ProductPageImgPromoText
                      img={product.image}
                      name={product.title_data.name}
-                     text={product.dosage_form} />
+                     text={product.dosage_form}
+                  />
                </div>
                <ProductPageBenefits
                   data={product.title_data.properties} />
+               <HowToTake data={product.how_to_take} />
             </>
          ) : (
             <ProductNotFound />

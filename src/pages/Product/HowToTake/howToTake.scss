@@ -1,0 +1,66 @@
+@import "src/styles/mixins.scss";
+@import "src/styles/variables.scss";
+
+.how-to-take {
+  width: 100%;
+  height: fit-content;
+  padding: 20px 2%;
+
+  &__container {
+    width: 100%;
+    @include flex-column-center-center;
+    padding: 15px 2%;
+    border-radius: 15px;
+
+    background: radial-gradient(
+        at top left,
+        $footer-light-blue,
+        transparent 80%
+      ),
+      radial-gradient(at top right, $footer-light-blue, transparent 60%),
+      radial-gradient(at bottom left, $footer-blue, transparent 60%),
+      radial-gradient(at bottom right, $footer-blue, transparent 60%);
+  }
+
+  &__title {
+    width: 100%;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    background-color: red;
+  }
+
+  &__description {
+    width: 100%;
+    padding: 5px 0;
+  }
+
+  &__details-container {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0px;
+    border-radius: 10px;
+    background-color: $white-color;
+  }
+
+  &__detail {
+    //  padding: 10px 0;
+  }
+
+  &__text {
+    padding: 5px 0;
+    line-height: 18px;
+    &--bold {
+      font-weight: 700;
+      margin: 5px 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .how-to-take {
+    //  padding: 20px 10%;
+  }
+}
