@@ -6,7 +6,7 @@
   margin-top: 150px;
   @include flex-column-center-center;
   color: $white-color;
-  font-weight: 700;
+  font-weight: $product-page-titles-font-weight;
 
   &__title {
     width: 100%;
@@ -93,6 +93,8 @@
   .product-page-titles {
     &__title {
       margin: 10vh 0;
+      font-size: 90px;
+      line-height: 96px;
     }
 
     &__subtitle {
