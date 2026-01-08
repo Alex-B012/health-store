@@ -27,14 +27,17 @@
     font-size: 30px;
     line-height: 32px;
     font-weight: 700;
-    text-transform: uppercase;
     text-align: left;
-    background-color: red;
   }
 
   &__description {
     width: 100%;
     padding: 5px 0;
+    font-size: 17px;
+  }
+
+  &__description:nth-of-type(1) {
+    margin-top: 20px;
   }
 
   &__details-container {
@@ -45,16 +48,37 @@
     background-color: $white-color;
   }
 
-  &__detail {
-    //  padding: 10px 0;
-  }
-
   &__text {
     padding: 5px 0;
-    line-height: 18px;
+    font-size: 17px;
+
     &--bold {
+      font-size: 17px;
+
       font-weight: 700;
       margin: 5px 0;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .how-to-take {
+    &__title {
+      font-size: 60px;
+      line-height: 62px;
+    }
+
+    &__description {
+      font-size: 18px;
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 19px;
+      &--bold {
+        font-size: 18px;
+        line-height: 19px;
+      }
     }
   }
 }

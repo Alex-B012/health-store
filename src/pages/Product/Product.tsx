@@ -28,8 +28,7 @@ function Product() {
                      text={product.dosage_form}
                   />
                </div>
-               <ProductPageBenefits
-                  data={product.title_data.properties} />
+               <ProductPageBenefits data={product.title_data.properties} />
                <HowToTake data={product.how_to_take} />
             </>
          ) : (
