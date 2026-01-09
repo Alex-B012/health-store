@@ -9,10 +9,19 @@ import HowToTake from './HowToTake/HowToTake';
 import ProductIngredients from './ProductIngredients/ProductIngredients';
 import ProductPharmacologicalProperties from './ProductPharmacologicalProperties/ProductPharmacologicalProperties';
 import ProductContraindications from './ProductContraindications/ProductContraindications';
+import { PharmacologicalDataItem } from '../../types/product';
 
 function Product() {
    const productId = window.location.pathname.split("/").pop();
    const product = products.find(p => p.id.toString() === productId);
+
+   const hasPharmacologicalData = product?.pharmacological_properties?.some(section =>
+      (section.data as PharmacologicalDataItem[])?.some(item =>
+         (item.title && item.title.trim().length > 0) ||
+         item.text?.some(t => t.trim().length > 0)
+      )
+   ) ?? false;
+
 
    return (
       <div className="product-page">
@@ -31,16 +40,17 @@ function Product() {
                      text={product.dosage_form}
                   />
                </div>
+
                <ProductPageBenefits data={product.title_data.properties} />
                {/* <ProductGeneralDesc data={ } /> */}
                <HowToTake data={product.how_to_take} />
-               <ProductPharmacologicalProperties
-                  data={product.pharmacological_properties}
-               />
+
+               {hasPharmacologicalData && <ProductPharmacologicalProperties data={product.pharmacological_properties} />}
+
                <ProductContraindications data={""} />
                <ProductIngredients data={product.ingredients} />
 
-               {/* <ProductKhranenie data={""} /> */}
+               {/* <ProductFurtherInformation data={""} /> */}
             </>
          ) : (
             <ProductNotFound />
