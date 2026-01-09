@@ -43,12 +43,12 @@ function Product() {
 
                <ProductPageBenefits data={product.title_data.properties} />
                {/* <ProductGeneralDesc data={ } /> */}
-               <HowToTake data={product.how_to_take} />
 
                {hasPharmacologicalData && <ProductPharmacologicalProperties data={product.pharmacological_properties} />}
+               <ProductIngredients data={product.ingredients} />
 
                <ProductContraindications data={""} />
-               <ProductIngredients data={product.ingredients} />
+               <HowToTake data={product.how_to_take} />
 
                {/* <ProductFurtherInformation data={""} /> */}
             </>
