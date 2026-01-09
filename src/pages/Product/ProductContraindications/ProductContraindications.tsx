@@ -1,5 +1,5 @@
-import ProductDetailsTitle from '../ProductDetailsTitle/ProductDetailsTitle'
 import './productContraindications.scss'
+import ProductCommonComp from '../commonComponents/ProductCommonComp/ProductCommonComp'
 
 interface ProductContraindicationsProp {
    data: any,
@@ -8,12 +8,9 @@ interface ProductContraindicationsProp {
 function ProductContraindications({ data }: ProductContraindicationsProp) {
    return (
       <div className='product-contraindications'>
-         <div className="pharmacological-properties__container">
-            <ProductDetailsTitle text={"Противопоказания"} />
-            <div className="pharmacological-properties__details-container">
+         <ProductCommonComp title={"Противопоказания"} >
 
-            </div>
-         </div>
+         </ProductCommonComp>
       </div>
    )
 }

@@ -1,0 +1,18 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+
+.product-common-comp {
+  width: 100%;
+  @include flex-column-center-center;
+  padding: 15px 1%;
+  border-radius: 15px;
+  background: $product-page-details-bg;
+
+  &__content {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0px;
+    border-radius: 10px;
+    background-color: $white-color;
+  }
+}

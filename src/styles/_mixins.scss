@@ -60,3 +60,11 @@
   -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, $opacity);
   box-shadow: 0 2px 4px rgba(0, 0, 0, $opacity);
 }
+
+//////////////// Product ////////////////
+
+@mixin product-component {
+  width: 100%;
+  height: fit-content;
+  padding: 20px 1.5%;
+}

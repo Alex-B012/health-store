@@ -1,7 +1,7 @@
-import { PharmacologicalSection } from '../../../types/product';
-import ProductDetailsTitle from '../ProductDetailsTitle/ProductDetailsTitle'
-import PharmacologicalPropertiesItem from './PharmacologicalPropertiesItem/PharmacologicalPropertiesItem';
 import './productPharmacologicalProperties.scss'
+import { PharmacologicalSection } from '../../../types/product';
+import ProductCommonComp from '../commonComponents/ProductCommonComp/ProductCommonComp';
+import PharmacologicalPropertiesItem from './PharmacologicalPropertiesItem/PharmacologicalPropertiesItem';
 
 
 interface ProductPharmacologicalPropertiesProp {
@@ -11,15 +11,12 @@ interface ProductPharmacologicalPropertiesProp {
 function ProductPharmacologicalProperties({ data }: ProductPharmacologicalPropertiesProp) {
    return (
       <div className='pharmacological-properties'>
-         <div className="pharmacological-properties__container">
-            <ProductDetailsTitle text={"Фармакологические свойства"} />
-            <div className="pharmacological-properties__details-container">
-               {data.map((item, idx) =>
-                  <PharmacologicalPropertiesItem key={idx} item={item} />
-               )}
-            </div>
-         </div>
-      </div>
+         <ProductCommonComp title={"Фармакологические свойства"} >
+            {data.map((item, idx) =>
+               <PharmacologicalPropertiesItem key={idx} item={item} />
+            )}
+         </ProductCommonComp>
+      </div >
    )
 }
 

@@ -1,5 +1,5 @@
-import ProductDetailsTitle from '../ProductDetailsTitle/ProductDetailsTitle';
 import './howToTake.scss'
+import ProductCommonComp from '../commonComponents/ProductCommonComp/ProductCommonComp';
 
 interface HowToTakeProp {
    data: {
@@ -14,8 +14,7 @@ interface HowToTakeProp {
 function HowToTake({ data }: HowToTakeProp) {
    return (
       <div className='how-to-take'>
-         <div className="how-to-take__container">
-            <ProductDetailsTitle text={"Способ применения"} />
+         <ProductCommonComp title={"Способ применения"} >
             {data.desc && data.desc.length > 0
                && data.desc.map((text: string, index) =>
                   <p className="how-to-take__description" key={index}>
@@ -34,8 +33,8 @@ function HowToTake({ data }: HowToTakeProp) {
                   </div>
                ))}
             </div>
-         </div>
-      </div>
+         </ProductCommonComp>
+      </div >
    )
 }
 
