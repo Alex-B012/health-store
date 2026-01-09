@@ -11,34 +11,7 @@
     @include flex-column-center-center;
     padding: 15px 1%;
     border-radius: 15px;
-
-    background: radial-gradient(
-        at top left,
-        $footer-light-blue,
-        transparent 80%
-      ),
-      radial-gradient(at top right, $footer-light-blue, transparent 60%),
-      radial-gradient(at bottom left, $footer-blue, transparent 60%),
-      radial-gradient(at bottom right, $footer-blue, transparent 60%);
-  }
-
-  &__title {
-    width: 100%;
-    font-size: 30px;
-    font-size: 8vw;
-    line-height: 8vw;
-    font-weight: 600;
-    text-align: left;
-  }
-
-  &__description {
-    width: 100%;
-    padding: 5px 0;
-    font-size: 17px;
-  }
-
-  &__description:nth-of-type(1) {
-    margin-top: 20px;
+    background: $product-page-details-bg;
   }
 
   &__details-container {
@@ -49,37 +22,105 @@
     background-color: $white-color;
   }
 
-  &__text {
+  &__block {
+    margin-bottom: 10px;
+  }
+
+  &__block-desc,
+  &__table-title {
+    margin: 5px 0;
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: 700;
+  }
+
+  &__block-item,
+  &__table-desc {
     padding: 5px 0;
     font-size: 17px;
+    line-height: 23px;
+  }
 
-    &--bold {
-      font-size: 17px;
+  &__table {
+    margin-top: 20px;
+    font-size: 14px;
+    &-head {
+      font-weight: 600;
+    }
 
-      font-weight: 700;
-      margin: 5px 0;
+    &__table-tr {
+      width: 800px;
+    }
+
+    &-th,
+    &-td {
+      vertical-align: middle;
+      border: 1px solid black;
+
+      &-name {
+        width: 400px;
+        height: 50px;
+        padding: 4px 2px 4px 6px;
+      }
+
+      &-per-capsule,
+      &-daily-value {
+        width: 100px;
+        text-align: center;
+        padding: 2px 2px;
+      }
+
+      &-per-capsule {
+        letter-spacing: -1px;
+        min-width: 76px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .product-ingredients {
+    &__table {
+      font-size: 15px;
     }
   }
 }
 
 @media screen and (min-width: 600px) {
-  .how-to-take {
-    &__title {
-      font-size: 48px;
-      line-height: 48px;
+  .product-ingredients {
+    &__block-desc,
+    &__block-item,
+    &__table-title,
+    &__table-desc {
+      font-size: 18px;
+      line-height: 24px;
     }
 
-    &__description {
-      font-size: 18px;
-    }
-
-    &__text {
-      font-size: 18px;
-      line-height: 19px;
-      &--bold {
-        font-size: 18px;
-        line-height: 19px;
+    &__table {
+      font-size: 16px;
+      &-head {
+        min-height: 25px;
       }
+      &-th-name {
+        padding: 5px 0;
+      }
+
+      &-th-per-capsule,
+      &-th-daily-value {
+        padding: 2px 5px;
+      }
+
+      &-per-capsule {
+        letter-spacing: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .product-ingredients {
+    &__table {
+      font-size: 18px;
     }
   }
 }

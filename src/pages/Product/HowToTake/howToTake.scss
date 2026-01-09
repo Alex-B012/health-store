@@ -11,15 +11,7 @@
     @include flex-column-center-center;
     padding: 15px 1%;
     border-radius: 15px;
-
-    background: radial-gradient(
-        at top left,
-        $footer-light-blue,
-        transparent 80%
-      ),
-      radial-gradient(at top right, $footer-light-blue, transparent 60%),
-      radial-gradient(at bottom left, $footer-blue, transparent 60%),
-      radial-gradient(at bottom right, $footer-blue, transparent 60%);
+    background: $product-page-details-bg;
   }
 
   &__description {

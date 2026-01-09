@@ -32,7 +32,7 @@ function Product() {
                <ProductPageBenefits data={product.title_data.properties} />
                {/* <ProductGeneralDesc data={ } /> */}
                <HowToTake data={product.how_to_take} />
-               <ProductIngredients data={""} />
+               <ProductIngredients data={product.ingredients} />
                {/* <ProductProtivopokazanija data={""}/> */}
                {/* <ProductKhranenie data={""} /> */}
             </>
