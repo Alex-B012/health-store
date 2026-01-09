@@ -1,4 +1,4 @@
-.pharmacological-properties-item-data {
+.product-text-item-data {
   font-size: 17px;
 
   &__title {
@@ -8,7 +8,7 @@
 }
 
 @media screen and (min-width: 600px) {
-  .pharmacological-properties-item-data {
+  .product-text-item-data {
     font-size: 18px;
     line-height: 19px;
   }

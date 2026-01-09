@@ -1,6 +1,6 @@
 import { PharmacologicalSection } from '../../../../types/product'
+import ProductTextItemData from '../../commonComponents/ProductTextItemData/ProductTextItemData'
 import './pharmacologicalPropertiesItem.scss'
-import PharmacologicalPropertiesItemData from './PharmacologicalPropertiesItemData/PharmacologicalPropertiesItemData'
 
 interface PharmacologicalPropertiesItemProp {
    item: PharmacologicalSection,
@@ -11,7 +11,7 @@ function PharmacologicalPropertiesItem({ item }: PharmacologicalPropertiesItemPr
       <div className='pharmacological-properties-item'>
          <h3 className='pharmacological-properties-item__title'>{item.title}</h3>
          {item.data.map((data, idx) =>
-            <PharmacologicalPropertiesItemData data={data} key={idx} />
+            <ProductTextItemData data={data} key={idx} />
          )}
       </div>
    )

@@ -1,5 +1,6 @@
-import { PharmacologicalDataItem } from '../../../../../types/product'
 import './pharmacologicalPropertiesItemData.scss'
+import { PharmacologicalDataItem } from '../../../../../types/product'
+import ProductTextLine from '../../../commonComponents/ProductTextLine/ProductTextLine'
 
 interface PharmacologicalPropertiesItemDataProp {
    data: PharmacologicalDataItem,
@@ -13,10 +14,8 @@ function PharmacologicalPropertiesItemData({ data }: PharmacologicalPropertiesIt
                {data.title}
             </h4>
          }
-         {data.text.map((line) =>
-            <p className='pharmacological-properties-item-data__text'>
-               {line}
-            </p>
+         {data.text.map((line, idx) =>
+            <ProductTextLine line={line} key={idx} />
          )}
       </div>
    )

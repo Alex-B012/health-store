@@ -10,6 +10,8 @@ import ProductIngredients from './ProductIngredients/ProductIngredients';
 import ProductPharmacologicalProperties from './ProductPharmacologicalProperties/ProductPharmacologicalProperties';
 import ProductContraindications from './ProductContraindications/ProductContraindications';
 import { PharmacologicalDataItem } from '../../types/product';
+import ProductFurtherInformation from './ProductFurtherInformation/ProductFurtherInformation';
+import ProductSideEffects from './ProductSideEffects/ProductSideEffects';
 
 function Product() {
    const productId = window.location.pathname.split("/").pop();
@@ -21,6 +23,9 @@ function Product() {
          item.text?.some(t => t.trim().length > 0)
       )
    ) ?? false;
+
+   const hasData = <T,>(arr?: T[]): arr is T[] =>
+      Array.isArray(arr) && arr.length > 0;
 
 
    return (
@@ -45,12 +50,20 @@ function Product() {
                {/* <ProductGeneralDesc data={ } /> */}
 
                {hasPharmacologicalData && <ProductPharmacologicalProperties data={product.pharmacological_properties} />}
+
                <ProductIngredients data={product.ingredients} />
 
-               <ProductContraindications data={""} />
+               {hasData(product.contraindications) && (
+                  <ProductContraindications data={product.contraindications} />
+               )}
+
                <HowToTake data={product.how_to_take} />
 
-               {/* <ProductFurtherInformation data={""} /> */}
+               {hasData(product.side_effects) && (
+                  <ProductSideEffects data={product.side_effects} />
+               )}
+
+               <ProductFurtherInformation data={product.further_information} />
             </>
          ) : (
             <ProductNotFound />

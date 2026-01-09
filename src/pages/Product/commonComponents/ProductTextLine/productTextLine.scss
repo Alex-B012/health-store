@@ -1,0 +1,11 @@
+.product-text-line {
+  font-size: 17px;
+  padding: 5px 0;
+}
+
+@media screen and (min-width: 600px) {
+  .product-text-line {
+    font-size: 18px;
+    line-height: 19px;
+  }
+}

@@ -5,14 +5,14 @@ import PharmacologicalPropertiesItem from './PharmacologicalPropertiesItem/Pharm
 
 
 interface ProductPharmacologicalPropertiesProp {
-   data: PharmacologicalSection[];
+   data?: PharmacologicalSection[];
 }
 
 function ProductPharmacologicalProperties({ data }: ProductPharmacologicalPropertiesProp) {
    return (
       <div className='pharmacological-properties'>
          <ProductCommonComp title={"Фармакологические свойства"} >
-            {data.map((item, idx) =>
+            {data?.map((item, idx) =>
                <PharmacologicalPropertiesItem key={idx} item={item} />
             )}
          </ProductCommonComp>
