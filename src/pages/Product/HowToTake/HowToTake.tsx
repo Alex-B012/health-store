@@ -1,3 +1,4 @@
+import ProductDetailsTitle from '../ProductDetailsTitle/ProductDetailsTitle';
 import './howToTake.scss'
 
 interface HowToTakeProp {
@@ -10,14 +11,11 @@ interface HowToTakeProp {
    }
 }
 
-
-
-
 function HowToTake({ data }: HowToTakeProp) {
    return (
       <div className='how-to-take'>
          <div className="how-to-take__container">
-            <h3 className="how-to-take__title">Способ применения</h3>
+            <ProductDetailsTitle text={"Способ применения"} />
             {data.desc && data.desc.length > 0
                && data.desc.map((text: string, index) =>
                   <p className="how-to-take__description" key={index}>

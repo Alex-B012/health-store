@@ -1,0 +1,16 @@
+.product-details-title {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-size: 8vw;
+  line-height: 8vw;
+  font-weight: 600;
+  text-align: left;
+}
+
+@media screen and (min-width: 600px) {
+  .product-details-title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}

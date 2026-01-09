@@ -6,6 +6,7 @@ import ProductPageTitles from './ProductPageTitles/ProductPageTitles';
 import ProductPageImgPromoText from './ProductPageImgText/ProductPageImgText';
 import ProductPageBenefits from './ProductPageBenefits/ProductPageBenefits';
 import HowToTake from './HowToTake/HowToTake';
+import ProductIngredients from './ProductIngredients/ProductIngredients';
 
 function Product() {
    const productId = window.location.pathname.split("/").pop();
@@ -29,7 +30,11 @@ function Product() {
                   />
                </div>
                <ProductPageBenefits data={product.title_data.properties} />
+               {/* <ProductGeneralDesc data={ } /> */}
                <HowToTake data={product.how_to_take} />
+               <ProductIngredients data={""} />
+               {/* <ProductProtivopokazanija data={""}/> */}
+               {/* <ProductKhranenie data={""} /> */}
             </>
          ) : (
             <ProductNotFound />
