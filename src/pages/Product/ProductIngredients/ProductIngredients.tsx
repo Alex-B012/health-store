@@ -1,23 +1,9 @@
+import { IngredientData, IngredientDesc } from '../../../types/product';
 import ProductDetailTitle from '../ProductDetailsTitle/ProductDetailsTitle'
 import './productIngredients.scss'
+import ProductTableSmall from './ProductTableSmall/ProductTableSmall';
 
-interface IngredientDesc {
-   title: string;
-   text: string[];
-}
 
-interface CapsuleAmount {
-   number: number;
-   unit: string;
-   daily_value?: number;
-}
-
-interface IngredientData {
-   id: number;
-   name: string;
-   capsule_contains: CapsuleAmount;
-   capsules_2_contain: CapsuleAmount;
-}
 
 interface ProductIngredientsProp {
    data: {
@@ -31,6 +17,11 @@ interface ProductIngredientsProp {
 }
 
 function ProductIngredients({ data }: ProductIngredientsProp) {
+   const
+      one_capsule = "1 капсула содержит",
+      daily_value_column_name = "СЗПЗ",
+      capsules_column_name = "2 капсулы содержат";
+
    return (
       <div className='product-ingredients'>
          <div className="product-ingredients__container">
@@ -75,20 +66,20 @@ function ProductIngredients({ data }: ProductIngredientsProp) {
                                     </th>
                                     <th
                                        className="product-ingredients__table-th product-ingredients__table-th-per-capsule">
-                                       1 капсула содержит
+                                       {one_capsule}
                                     </th>
                                     <th
                                        className="product-ingredients__table-th product-ingredients__table-th-daily-value">
-                                       СЗПЗ
+                                       {daily_value_column_name}
                                     </th>
                                     <th
                                        className="product-ingredients__table-th product-ingredients__table-th-per-capsule">
-                                       2 капсулы содержат
+                                       {capsules_column_name}
                                     </th>
                                     <th
 
                                        className="product-ingredients__table-th product-ingredients__table-th-daily-value">
-                                       СЗПЗ
+                                       {daily_value_column_name}
                                     </th>
                                  </tr>
                               </thead>
@@ -121,26 +112,15 @@ function ProductIngredients({ data }: ProductIngredientsProp) {
                                     </tr>
                                  ))}
                               </tbody>
-                              <div className='product-ingredients__table-sm'>
-                                 <div className='product-ingredients__table-sm-head'>
-                                    <div className='product-ingredients__table-sm-head-cell'>
-
-                                    </div>
-                                    <div className='product-ingredients__table-sm-head-cell'>
-
-                                    </div>
-                                    <div className='product-ingredients__table-sm-head-cell'>
-
-                                    </div>
-                                    <div className='product-ingredients__table-sm-head-cell'>
-
-                                    </div>
-
-                                 </div>
-                              </div>
                            </table>
+                           <ProductTableSmall data={block.table} column_names={{
+                              one_capsule: one_capsule,
+                              daily_value_column_name: daily_value_column_name,
+                              capsules_column_name: capsules_column_name,
+                           }} />
                         </div>
                      )}
+
 
                   </div>
                ))}
@@ -149,8 +129,8 @@ function ProductIngredients({ data }: ProductIngredientsProp) {
 
 
             </div>
-         </div>
-      </div>
+         </div >
+      </div >
    )
 }
 

@@ -7,6 +7,8 @@ import ProductPageImgPromoText from './ProductPageImgText/ProductPageImgText';
 import ProductPageBenefits from './ProductPageBenefits/ProductPageBenefits';
 import HowToTake from './HowToTake/HowToTake';
 import ProductIngredients from './ProductIngredients/ProductIngredients';
+import ProductPharmacologicalProperties from './ProductPharmacologicalProperties/ProductPharmacologicalProperties';
+import ProductContraindications from './ProductContraindications/ProductContraindications';
 
 function Product() {
    const productId = window.location.pathname.split("/").pop();
@@ -32,8 +34,12 @@ function Product() {
                <ProductPageBenefits data={product.title_data.properties} />
                {/* <ProductGeneralDesc data={ } /> */}
                <HowToTake data={product.how_to_take} />
+               <ProductPharmacologicalProperties
+                  data={product.pharmacological_properties}
+               />
+               <ProductContraindications data={""} />
                <ProductIngredients data={product.ingredients} />
-               {/* <ProductProtivopokazanija data={""}/> */}
+
                {/* <ProductKhranenie data={""} /> */}
             </>
          ) : (

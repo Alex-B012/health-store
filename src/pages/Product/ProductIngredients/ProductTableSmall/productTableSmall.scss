@@ -1,0 +1,91 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+
+.product-table-sm {
+  width: 100%;
+  max-width: 450px;
+  margin-top: 20px;
+  font-size: 13px;
+  @include flex-column-center-center;
+
+  &-head {
+    width: 100%;
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    &-cell {
+      display: grid;
+      width: 100%;
+      border: 1px solid $product-page-table-cell-border;
+      text-align: center;
+
+      letter-spacing: -0.6px;
+
+      &:not(:nth-child(1)) {
+        border-left: none;
+      }
+    }
+  }
+
+  &-body {
+    width: 100%;
+    &-data {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto auto;
+      grid-template-areas:
+        "name name name name"
+        "capsule1 daily1 capsule2 daily2";
+
+      &-name {
+        grid-area: name;
+        padding: 4px 2px 4px 6px;
+        border: 1px solid $product-page-table-cell-border;
+        border-top: none;
+      }
+
+      &-column {
+        border: 1px solid $product-page-table-cell-border;
+        border-top: none;
+        text-align: center;
+        font-size: 14px;
+        padding: 5px 0;
+      }
+
+      &-capsule1 {
+        grid-area: capsule1;
+      }
+
+      &-daily1 {
+        grid-area: daily1;
+        border-left: none;
+      }
+
+      &-capsule2 {
+        grid-area: capsule2;
+        border-left: none;
+      }
+
+      &-daily2 {
+        grid-area: daily2;
+        border-left: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 350px) {
+  .product-table-sm {
+    &-cell {
+      letter-spacing: none;
+    }
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .product-table-sm {
+    display: none;
+  }
+}
