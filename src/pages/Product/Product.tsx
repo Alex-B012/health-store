@@ -34,6 +34,8 @@ function Product() {
       window.location.hash = "#top";
    }, [productId]);
 
+
+
    return (
       <div className="product-page" >
          <BackHomeBtn />
@@ -52,10 +54,11 @@ function Product() {
                   />
                </div>
 
-               {/* Scroll for pages */}
-               {/* HomePage 100vh */}
-
-               <ProductPageBenefits data={product.title_data.properties} />
+               <ProductPageBenefits data={{
+                  text: product.title_data.properties,
+                  img: product.title_data.properties_img,
+                  alt: product.title_data.name
+               }} />
                {/* <ProductGeneralDesc data={ } /> */}
 
                {hasPharmacologicalData && <ProductPharmacologicalProperties data={product.pharmacological_properties} />}

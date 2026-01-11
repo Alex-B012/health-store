@@ -1,4 +1,6 @@
 import { productImages } from "./product_images"
+import { peopleImages } from "./people_images";
+
 
 export const products = [
    {
@@ -20,6 +22,7 @@ export const products = [
             "Болевой синдром: тендинит, бурсит, радикулит, полиартрит",
             "Купирование боли при остром подагрическом артрите",
          ],
+         properties_img: peopleImages.woman_3_img,
       },
       image: productImages.inotex_img,
       how_to_take: {
@@ -104,6 +107,7 @@ export const products = [
             "Трихоцидное",
             "Антибактериальное и противовоспалительное локальное действие",
          ],
+         properties_img: peopleImages.woman_img,
       },
       image: productImages.fenolive_img,
       how_to_take: {
@@ -242,6 +246,7 @@ export const products = [
             "Черепно-мозговая травма, острый и восстановительный период",
             "Вызванные дегенеративными и сосудистыми заболеваниями когнитивные, сенситивные и двигательные расстройства, в том числе, болезни Паркинсона и Альцгеймера",
          ],
+         properties_img: peopleImages.man_senior_img,
       },
       image: productImages.citikomed_img,
       how_to_take: {
@@ -310,6 +315,7 @@ export const products = [
             "Инфекционно-воспалительный заболевания, вызванные чувствительными к ломефлоксацину микроорганизмами",
             "Состояния до и после оперативного вмешательства на предстательной железе",
          ],
+         properties_img: peopleImages.man_senior2_img,
       },
       image: productImages.androprostPlus_img,
       how_to_take: {
@@ -468,6 +474,7 @@ export const products = [
             "Устраняет и уменьшает функциональные расстройства мочеиспускания – дизурию, поллакиурию, никтурию при заболеваниях предстательной железы",
             "Для увеличения количества и подвижности сперматозоидов, нормализации их структуры; в качестве факторов, влияющих на образование тестостерона, а также гормонов щитовидной железы",
          ],
+         properties_img: peopleImages.man_img,
       },
       image: productImages.androsan_img,
       how_to_take: {
@@ -654,6 +661,7 @@ export const products = [
             "В комплексной терапии недержания мочи у женщин",
             "Улучшает состояние простаты у мужчин",
          ],
+         properties_img: peopleImages.woman_img,
       },
       image: productImages.viponefron_img,
       how_to_take: {
@@ -796,6 +804,7 @@ export const products = [
             "Быстрое и полное усвоение",
             "Комплексный эффект",
          ],
+         properties_img: peopleImages.woman_2_img,
       },
       image: productImages.aminoprom_img,
       how_to_take: {
