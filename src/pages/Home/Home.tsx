@@ -17,9 +17,9 @@ function Home() {
    return (
       <div className="homePage">
          <Greeting />
-         <Welcome />
-         <Text text={greetingText.text} />
-         <Text title={"Каталог товаров"} />
+         {/* <Welcome /> */}
+         {/* <Text text={greetingText.text} /> */}
+         <Text title={"Наша продукция"} />
          <ProductCardList data={products} />
       </div>
    )
