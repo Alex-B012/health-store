@@ -4,7 +4,7 @@ import "./header.scss";
 
 function Header() {
    return (
-      <header className="header">
+      <header className="header" id='top'>
          <div className="header__top">
             <LogoComponent />
             <div className="menu_btn">Menu</div>

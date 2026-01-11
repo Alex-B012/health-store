@@ -1,7 +1,12 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
 .error-number {
   width: 200px;
   height: fit-content;
+  @include flex-center-center;
   padding: 60px 0 70px;
+  color: $product-card-title-color;
   &__digit {
     width: 100%;
     height: fit-content;

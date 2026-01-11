@@ -12,6 +12,8 @@ import ProductContraindications from './ProductContraindications/ProductContrain
 import { PharmacologicalDataItem } from '../../types/product';
 import ProductFurtherInformation from './ProductFurtherInformation/ProductFurtherInformation';
 import ProductSideEffects from './ProductSideEffects/ProductSideEffects';
+import { useEffect } from 'react';
+
 
 function Product() {
    const productId = window.location.pathname.split("/").pop();
@@ -28,8 +30,12 @@ function Product() {
       Array.isArray(arr) && arr.length > 0;
 
 
+   useEffect(() => {
+      window.location.hash = "#top";
+   }, [productId]);
+
    return (
-      <div className="product-page">
+      <div className="product-page" >
          <BackHomeBtn />
          {product ? (
             <>
@@ -45,6 +51,9 @@ function Product() {
                      text={product.dosage_form}
                   />
                </div>
+
+               {/* Scroll for pages */}
+               {/* HomePage 100vh */}
 
                <ProductPageBenefits data={product.title_data.properties} />
                {/* <ProductGeneralDesc data={ } /> */}

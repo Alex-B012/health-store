@@ -24,13 +24,17 @@ $home-page-link-color: #224369;
 $home-page-link-color-hover: #4a90e2;
 
 $product-page-titles-font-weight: 600;
-$product-page-details-bg: radial-gradient(
-    at top left,
-    $footer-light-blue,
-    transparent 80%
-  ),
-  radial-gradient(at top right, $footer-light-blue, transparent 60%),
-  radial-gradient(at bottom left, $footer-blue, transparent 60%),
-  radial-gradient(at bottom right, $footer-blue, transparent 60%);
 
 $product-page-table-cell-border: darkgray;
+
+$greeting-gradient-corner1: #9cc6f7;
+$greeting-gradient-corner2: #a4c8f7;
+$greeting-gradient-corner3: #b5c1f4;
+$greeting-gradient-corner4: #c7cdf2;
+$greeting-gradient-corner5: #e3e1f6;
+
+$product-page-common-comp-bg: linear-gradient(
+  to bottom,
+  $footer-light-blue 0%,
+  $footer-blue 100%
+);

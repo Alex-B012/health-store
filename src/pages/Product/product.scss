@@ -12,13 +12,12 @@
     @include flex-column-center-center;
     justify-content: flex-start;
     margin-top: -155px;
-    background: linear-gradient(
-      -150deg,
-      $white-color 0%,
-      $footer-blue 25%,
-      $footer-darker-blue 50%,
-      $footer-blue 75%,
-      $white-color 100%
+    @include product-gradient-bg(
+      $white-color,
+      $footer-blue,
+      $footer-darker-blue,
+      $footer-blue,
+      $white-color
     );
   }
 }

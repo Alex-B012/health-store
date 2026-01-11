@@ -1,0 +1,7 @@
+@import "../../styles/mixins";
+
+.notFound {
+  width: 100%;
+  @include flex-column-center-center;
+  padding: 20px 0;
+}
