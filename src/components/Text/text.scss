@@ -6,7 +6,8 @@
 
   &__title {
     width: 100%;
-    font-size: 17px;
+    font-size: 7vw;
+    line-height: 7.1vw;
     font-weight: 700;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -26,10 +27,30 @@
   }
 }
 
+@media screen and (min-width: 400px) {
+  .text {
+    &__title {
+      font-size: 6vw;
+      line-height: 6.1vw;
+    }
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .text {
+    &__title {
+      font-size: 5vw;
+      line-height: 5.1vw;
+    }
+  }
+}
+
 @media screen and (min-width: 600px) {
   .text {
     &__title {
-      font-size: 18px;
+      font-size: 4vw;
+      line-height: 4.1vw;
+      margin: 20px 0;
     }
 
     &__content {
@@ -39,8 +60,19 @@
   }
 }
 
+@media screen and (min-width: 992px) {
+  .text {
+    padding: 30px 8.5% 20px;
+    &__title {
+      font-size: 40px;
+      line-height: 44px;
+      margin: 40px 0;
+    }
+  }
+}
+
 @media screen and (min-width: 1300px) {
   .text {
-    padding: 30px 10% 20px;
+    padding: 30px 8.5% 20px;
   }
 }
