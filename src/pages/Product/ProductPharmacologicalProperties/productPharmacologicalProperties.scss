@@ -3,3 +3,9 @@
 .pharmacological-properties {
   @include product-component;
 }
+
+@media screen and (min-width: 800px) {
+  .pharmacological-properties {
+    @include product-component-lg;
+  }
+}

@@ -103,6 +103,8 @@
 
 @media screen and (min-width: 800px) {
   .product-ingredients {
+    @include product-component-lg;
+
     &__table {
       font-size: 17px;
     }

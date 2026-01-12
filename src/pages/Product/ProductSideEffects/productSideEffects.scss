@@ -3,3 +3,9 @@
 .product-side-effects {
   @include product-component;
 }
+
+@media screen and (min-width: 800px) {
+  .product-side-effects {
+    @include product-component-lg;
+  }
+}

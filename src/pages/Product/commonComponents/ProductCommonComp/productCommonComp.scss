@@ -4,7 +4,8 @@
 .product-common-comp {
   width: 100%;
   @include flex-column-center-center;
-  padding: 15px 1%;
+  padding: 10px;
+  margin-bottom: 33px;
   border-radius: 15px;
   background: $product-page-common-comp-bg;
 
@@ -14,5 +15,34 @@
     margin-top: 0px;
     border-radius: 10px;
     background-color: $white-color;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .product-common-comp {
+    padding: 15px;
+
+    &__content {
+      padding: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .product-common-comp {
+    padding: 20px;
+
+    &__content {
+      padding: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .product-common-comp {
+    &__content {
+      padding: 20px;
+    }
   }
 }

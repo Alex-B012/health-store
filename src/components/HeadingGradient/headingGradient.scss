@@ -1,0 +1,61 @@
+@import "../../styles/variables";
+
+.heading-gradient {
+  width: 100%;
+  padding: 30px 8% 20px;
+  font-size: 7vw;
+  line-height: 7.1vw;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+
+  &--center {
+    text-align: center;
+  }
+  &--right {
+    text-align: right;
+  }
+
+  &__line {
+    background: linear-gradient(
+      to right,
+      $product-card-text-color 0%,
+      $footer-light-violet 100%
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .heading-gradient {
+    font-size: 6vw;
+    line-height: 6.1vw;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .heading-gradient {
+    font-size: 5vw;
+    line-height: 5.1vw;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .heading-gradient {
+    font-size: 4vw;
+    line-height: 4.1vw;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .heading-gradient {
+    font-size: 40px;
+    line-height: 44px;
+    margin: 40px 0;
+  }
+}

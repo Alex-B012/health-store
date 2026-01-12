@@ -38,3 +38,9 @@
     }
   }
 }
+
+@media screen and (min-width: 800px) {
+  .how-to-take {
+    @include product-component-lg;
+  }
+}

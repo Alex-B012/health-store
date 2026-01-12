@@ -34,7 +34,9 @@ $greeting-gradient-corner4: #c7cdf2;
 $greeting-gradient-corner5: #e3e1f6;
 
 $product-page-common-comp-bg: linear-gradient(
-  to bottom,
-  $footer-light-blue 0%,
-  $footer-blue 100%
+  -170deg,
+  $footer-blue 0%,
+  $footer-blue 10%,
+  $footer-light-violet 60%,
+  $footer-light-violet 100%
 );

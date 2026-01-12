@@ -15,3 +15,9 @@
     line-height: 19px;
   }
 }
+
+@media screen and (min-width: 800px) {
+  .further-information {
+    @include product-component-lg;
+  }
+}

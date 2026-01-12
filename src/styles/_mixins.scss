@@ -79,6 +79,12 @@
 @mixin product-component {
   width: 100%;
   height: fit-content;
+  padding: 20px 2.65%;
+}
+
+@mixin product-component-lg {
+  width: 100%;
+  height: fit-content;
   padding: 20px 1.5%;
 }
 

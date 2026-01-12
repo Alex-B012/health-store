@@ -3,7 +3,7 @@
   &__title {
     padding: 5px 0;
     margin: 0 0 10px;
-    font-size: 17px;
+    font-size: clamp(10px, 5vw, 17px);
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -15,7 +15,7 @@
 @media screen and (min-width: 600px) {
   .pharmacological-properties-item {
     &__title {
-      font-size: 18px;
+      font-size: clamp(10px, 5vw, 18px);
       line-height: 19px;
     }
   }

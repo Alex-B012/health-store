@@ -4,3 +4,9 @@
 .product-contraindications {
   @include product-component;
 }
+
+@media screen and (min-width: 800px) {
+  .product-contraindications {
+    @include product-component-lg;
+  }
+}

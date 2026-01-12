@@ -60,17 +60,7 @@ function Product() {
                   alt: product.title_data.name
                }} />
 
-
-
-
                {/* <ProductGeneralDesc data={ } /> */}
-
-               {/* Гпадиент для плашек и заголовки белым */}
-               {/* Заголовок Наша продукция */}
-               {/* Шрифты */}
-
-
-
 
                {hasPharmacologicalData && <ProductPharmacologicalProperties data={product.pharmacological_properties} />}
 
