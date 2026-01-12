@@ -13,6 +13,7 @@ import { PharmacologicalDataItem } from '../../types/product';
 import ProductFurtherInformation from './ProductFurtherInformation/ProductFurtherInformation';
 import ProductSideEffects from './ProductSideEffects/ProductSideEffects';
 import { useEffect } from 'react';
+import ProductGeneralDesc from './ProductGeneralDesc/ProductGeneralDesc';
 
 
 function Product() {
@@ -60,7 +61,7 @@ function Product() {
                   alt: product.title_data.name
                }} />
 
-               {/* <ProductGeneralDesc data={ } /> */}
+               <ProductGeneralDesc data={product.general_desc} />
 
                {hasPharmacologicalData && <ProductPharmacologicalProperties data={product.pharmacological_properties} />}
 
