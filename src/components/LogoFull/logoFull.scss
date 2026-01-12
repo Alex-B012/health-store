@@ -1,9 +1,10 @@
+@import "../../styles/mixins";
+
 .logo-full {
   width: 100%;
   height: fit-content;
-  max-height: 150px;
-  display: flex;
-  justify-content: center;
+  max-height: 180px;
+  @include flex-column-center-center;
   overflow: hidden;
 
   &__img {
@@ -14,7 +15,7 @@
 
 @media screen and (min-width: 500px) {
   .logo-full {
-    max-height: 200px;
+    max-height: 220px;
 
     &__img {
       min-width: 300px;
