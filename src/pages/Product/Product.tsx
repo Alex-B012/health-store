@@ -65,7 +65,6 @@ function Product() {
 
                {hasPharmacologicalData && <ProductPharmacologicalProperties data={product.pharmacological_properties} />}
 
-               <ProductIngredients data={product.ingredients} />
 
                {hasData(product.contraindications) && (
                   <ProductContraindications data={product.contraindications} />
@@ -73,6 +72,7 @@ function Product() {
 
                <HowToTake data={product.how_to_take} />
 
+               <ProductIngredients data={product.ingredients} />
                {hasData(product.side_effects) && (
                   <ProductSideEffects data={product.side_effects} />
                )}
