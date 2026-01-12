@@ -1,0 +1,1 @@
+export { useProductFromUrl } from "./model/hooks/useProductFromUrl";

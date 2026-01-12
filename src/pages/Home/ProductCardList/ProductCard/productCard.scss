@@ -37,18 +37,21 @@
 
   &__title {
     width: 97%;
-    height: 40px;
+    height: 35px;
+    margin-top: 10px;
     text-align: center;
-    font-size: 17px;
-    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
     color: $product-card-title-color;
   }
 
   &__desc {
     width: 97%;
-    height: 67px;
+    height: 75px;
     text-align: center;
     font-size: 15px;
+    line-height: 18px;
     padding: 4px 0;
     overflow: hidden;
   }
@@ -57,13 +60,11 @@
 @media screen and (min-width: 600px) {
   .product-card {
     &__title {
-      font-size: 18px;
+      height: 40px;
+      font-size: 22px;
+      line-height: 26px;
     }
     &__desc {
-      font-size: 16px;
-    }
-
-    &__btn {
       font-size: 16px;
     }
   }

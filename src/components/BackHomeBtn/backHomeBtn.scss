@@ -2,12 +2,12 @@
 
 .backHomeBtn {
   width: 100%;
-  padding: 20px 8%;
+  padding: 20px 7%;
   z-index: 5;
+  font-size: 14px;
+  color: $white-color;
 
   &__link {
-    font-size: 14px;
-    color: $white-color;
     text-decoration: none;
     transition: all 1.5s ease;
 
@@ -16,6 +16,58 @@
       text-decoration: underline;
       transition: all 0.7s ease;
     }
+  }
+
+  &__product:hover {
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 350px) {
+  .backHomeBtn {
+    padding: 20px 6%;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .backHomeBtn {
+    padding: 20px 5.5%;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .backHomeBtn {
+    padding: 20px 5%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .backHomeBtn {
+    padding: 20px 4.5%;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .backHomeBtn {
+    padding: 20px 4%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .backHomeBtn {
+    padding: 20px 3.5%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .backHomeBtn {
+    padding: 20px 4%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .backHomeBtn {
+    padding: 20px 5%;
   }
 }
 
