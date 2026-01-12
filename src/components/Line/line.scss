@@ -1,8 +1,32 @@
 .line {
-  width: 95%;
+  width: 92%;
   height: 1px;
   background-color: rgb(255, 255, 255, 0.5);
   border: none;
+}
+
+@media screen and (min-width: 350px) {
+  .line {
+    width: 93%;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .line {
+    width: 94%;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .line {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .line {
+    width: 96%;
+  }
 }
 
 @media screen and (min-width: 700px) {
