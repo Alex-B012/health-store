@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import React, { Suspense, useCallback, useState } from 'react';
 import './App.scss';
 
@@ -11,18 +11,10 @@ const Product = React.lazy(() => import("./pages/Product/Product"));
 const NotFound = React.lazy(() => import("./pages/NotFound/NotFound"));
 
 function App() {
-
-  const location = useLocation();
   const [loaded, setLoaded] = useState(false);
 
-  React.useEffect(() => {
-    setLoaded(false);
-
-  }, [location.pathname]);
-
-
   const handlePageLoad = useCallback(() => {
-    setTimeout(() => setLoaded(true), 500);
+    setTimeout(() => setLoaded(true), 1000);
   }, []);
 
   return (
@@ -41,7 +33,6 @@ function App() {
             <Route path="*" element={
               <NotFound onLoad={handlePageLoad} />
             } />
-            {/* <Route path="*" element={<Loading />} /> */}
           </Routes>
         </Suspense>
       </main>

@@ -35,8 +35,8 @@ function Product({ onLoad }: ProductProps) {
 
 
    useEffect(() => {
-      window.location.hash = "#top";
       onLoad();
+      window.location.hash = "#top";
    }, [productId, onLoad]);
 
 

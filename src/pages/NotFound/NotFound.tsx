@@ -12,8 +12,8 @@ interface NotFoundProps {
 function NotFound({ onLoad }: NotFoundProps) {
    useEffect(() => {
       onLoad();
+      window.location.hash = "#top";
    }, [onLoad]);
-
 
    return (
       <div className="notFound">

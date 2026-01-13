@@ -12,10 +12,9 @@ interface HomeProps {
 }
 
 function Home({ onLoad }: HomeProps) {
-
    useEffect(() => {
-      window.location.hash = "#top";
       onLoad();
+      window.location.hash = "#top";
    }, [onLoad]);
 
    return (

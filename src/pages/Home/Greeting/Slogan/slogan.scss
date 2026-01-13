@@ -11,26 +11,70 @@
 
   &__title {
     width: 100%;
-    font-size: 2.5rem;
-    line-height: 2.6rem;
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+    margin-top: 60px;
   }
 
   &__subtitle {
     width: 100%;
-    font-size: 1.5rem;
-    line-height: 1.6rem;
+    font-size: 1.3rem;
+    line-height: 1.4rem;
     margin-top: 40px;
   }
 
   &__btn {
     align-self: flex-start;
-    margin: 50px 0 0;
-    padding: 10px 20px;
+    margin: 50px 0 10px 0;
+    padding: 7.5px 15px;
     font-size: 0.8rem;
     @include button-link-styles;
 
     &:hover {
       @include button-link-styles-hover;
+    }
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .slogan {
+    &__title {
+      font-size: 1.8rem;
+      line-height: 1.9rem;
+      margin-top: 80px;
+    }
+
+    &__subtitle {
+      font-size: 1.5rem;
+      line-height: 1.6rem;
+      margin-top: 30px;
+    }
+
+    &__btn {
+      padding: 7.5px 15px;
+      font-size: 0.9rem;
+      margin: 40px 0 10px 0;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .slogan {
+    padding: 30px 20px;
+
+    &__title {
+      font-size: 2rem;
+      line-height: 2.1rem;
+    }
+
+    &__subtitle {
+      font-size: 1.7rem;
+      line-height: 1.8rem;
+    }
+
+    &__btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
     }
   }
 }
