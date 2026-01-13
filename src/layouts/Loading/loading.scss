@@ -3,14 +3,25 @@
 
 .loading {
   width: 100%;
-  min-height: 70vh;
+  min-height: 100vh;
+  position: fixed;
   @include flex-column-center-center;
+
+  margin-top: -100px;
+  @include product-gradient-bg(
+    $greeting-gradient-corner1,
+    $greeting-gradient-corner2,
+    $greeting-gradient-corner3,
+    $greeting-gradient-corner4,
+    $greeting-gradient-corner5
+  );
 
   &__text {
     margin-top: 15px;
     font-size: 22px;
     font-weight: 700;
     color: $product-card-title-color;
+    z-index: 1;
   }
 }
 
