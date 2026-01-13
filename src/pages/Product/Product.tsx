@@ -15,8 +15,11 @@ import ProductSideEffects from './ProductSideEffects/ProductSideEffects';
 import { useEffect } from 'react';
 import ProductGeneralDesc from './ProductGeneralDesc/ProductGeneralDesc';
 
+interface ProductProps {
+   onLoad: () => void;
+}
 
-function Product() {
+function Product({ onLoad }: ProductProps) {
    const productId = window.location.pathname.split("/").pop();
    const product = products.find(p => p.id.toString() === productId);
 
@@ -33,7 +36,8 @@ function Product() {
 
    useEffect(() => {
       window.location.hash = "#top";
-   }, [productId]);
+      onLoad();
+   }, [productId, onLoad]);
 
 
 

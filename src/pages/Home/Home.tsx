@@ -7,11 +7,16 @@ import Greeting from './Greeting/Greeting'
 import { useEffect } from 'react'
 import HeadingGradient from '../../components/HeadingGradient/HeadingGradient'
 
-function Home() {
+interface HomeProps {
+   onLoad: () => void;
+}
+
+function Home({ onLoad }: HomeProps) {
 
    useEffect(() => {
       window.location.hash = "#top";
-   }, []);
+      onLoad();
+   }, [onLoad]);
 
    return (
       <div className="homePage">
