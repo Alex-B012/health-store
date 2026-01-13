@@ -14,7 +14,7 @@ function App() {
   const [loaded, setLoaded] = useState(false);
 
   const handlePageLoad = useCallback(() => {
-    setTimeout(() => setLoaded(true), 1000);
+    setTimeout(() => setLoaded(true), 800);
   }, []);
 
   return (
