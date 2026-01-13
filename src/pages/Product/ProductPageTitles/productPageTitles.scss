@@ -104,3 +104,22 @@
     }
   }
 }
+
+//width and height
+@media screen and (min-width: 550px) and (min-height: 300px) {
+  .product-page-titles {
+    &__title {
+      font-size: 10vh;
+      line-height: 11vh;
+    }
+
+    &__subtitle {
+      width: 100%;
+      padding: 0 2%;
+      margin: 0.5vh 0;
+      font-size: 6.5vh;
+      line-height: 7.5vh;
+      z-index: 3;
+    }
+  }
+}

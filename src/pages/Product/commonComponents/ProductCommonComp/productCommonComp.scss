@@ -46,3 +46,16 @@
     }
   }
 }
+
+//width and height
+@media screen and (min-width: 550px) and (min-height: 300px) {
+  .product-common-comp {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 550px) and (min-height: 500px) {
+  .product-common-comp {
+    margin-bottom: 33px;
+  }
+}
