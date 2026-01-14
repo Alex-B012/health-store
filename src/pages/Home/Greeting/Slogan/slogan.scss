@@ -212,10 +212,9 @@
 }
 
 //width and height - tablets and small desktops
-
 @media screen and (min-width: 450px) and (min-height: 700px) {
   .slogan {
-    padding: 60px 20px 150px;
+    padding: 25vw 20px 150px;
 
     &__title {
       font-size: 6vh;
