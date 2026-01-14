@@ -29,3 +29,44 @@
     }
   }
 }
+
+@media screen and (min-height: 200px) {
+  .greeting {
+    &-container {
+      min-height: 295vh;
+      gap: 10vw 0;
+    }
+  }
+}
+
+@media screen and (min-height: 225px) {
+  .greeting {
+    &-container {
+      min-height: 265vh;
+    }
+  }
+}
+
+@media screen and (min-height: 250px) {
+  .greeting {
+    &-container {
+      min-height: 240vh;
+    }
+  }
+}
+
+@media screen and (min-height: 275px) {
+  .greeting {
+    &-container {
+      min-height: 220vh;
+    }
+  }
+}
+
+@media screen and (min-height: 300px) {
+  .greeting {
+    &-container {
+      min-height: 101vh;
+    }
+  }
+}
