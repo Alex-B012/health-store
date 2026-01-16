@@ -12,14 +12,10 @@ import ProductContraindications from './ProductContraindications/ProductContrain
 import { PharmacologicalDataItem } from '../../types/product';
 import ProductFurtherInformation from './ProductFurtherInformation/ProductFurtherInformation';
 import ProductSideEffects from './ProductSideEffects/ProductSideEffects';
-import { useEffect } from 'react';
 import ProductGeneralDesc from './ProductGeneralDesc/ProductGeneralDesc';
 
-interface ProductProps {
-   onLoad: () => void;
-}
 
-function Product({ onLoad }: ProductProps) {
+function Product() {
    const productId = window.location.pathname.split("/").pop();
    const product = products.find(p => p.id.toString() === productId);
 
@@ -32,14 +28,6 @@ function Product({ onLoad }: ProductProps) {
 
    const hasData = <T,>(arr?: T[]): arr is T[] =>
       Array.isArray(arr) && arr.length > 0;
-
-
-   useEffect(() => {
-      onLoad();
-      window.location.hash = "#top";
-   }, [productId, onLoad]);
-
-
 
    return (
       <div className="product-page" >

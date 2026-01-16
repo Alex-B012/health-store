@@ -1,22 +1,11 @@
 import './home.scss'
-
 import { products } from '../../data/products'
 
 import ProductCardList from './ProductCardList/ProductCardList'
 import Greeting from './Greeting/Greeting'
-import { useEffect } from 'react'
 import HeadingGradient from '../../components/HeadingGradient/HeadingGradient'
 
-interface HomeProps {
-   onLoad: () => void;
-}
-
-function Home({ onLoad }: HomeProps) {
-   useEffect(() => {
-      onLoad();
-      window.location.hash = "#top";
-   }, [onLoad]);
-
+function Home() {
    return (
       <div className="homePage">
          <Greeting />

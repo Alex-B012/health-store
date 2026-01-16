@@ -5,6 +5,7 @@ import './App.scss';
 import Header from './layouts/Header/Header';
 import Footer from './layouts/Footer/Footer';
 import Loader from './layouts/Loading/Loader';
+import { ScrollToTop } from './components/ScrollToTop/ScrollToTop';
 
 const Home = React.lazy(() => import("./pages/Home/Home"));
 const Product = React.lazy(() => import("./pages/Product/Product"));
@@ -20,18 +21,19 @@ function App() {
   return (
     <div className="App">
       <Loader isHidden={loaded} />
+      <ScrollToTop onLoad={handlePageLoad} />
       <Header />
-      <main >
+      <main className="main-content">
         <Suspense fallback={null}>
           <Routes>
             <Route path="/" element={
-              <Home onLoad={handlePageLoad} />
+              <Home />
             } />
             <Route path="/products/:id" element={
-              <Product onLoad={handlePageLoad} />
+              <Product />
             } />
             <Route path="*" element={
-              <NotFound onLoad={handlePageLoad} />
+              <NotFound />
             } />
           </Routes>
         </Suspense>
