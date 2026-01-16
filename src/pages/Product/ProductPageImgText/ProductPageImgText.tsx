@@ -3,12 +3,14 @@ import './productPageImgText.scss'
 import ProductPagePromoText from './ProductPagePromoText/ProductPagePromoText'
 
 interface ProductPageImgPromoTextProp {
-   img: string,
+   img: { src: string, rotation?: string },
    name: string,
    text: string,
 }
 
 function ProductPageImgPromoText({ img, name, text }: ProductPageImgPromoTextProp) {
+   console.log('Rendering ProductPageImgPromoText with text:', text);
+
    return (
       <div className='product-page-img-text'>
          <ProductPageImg

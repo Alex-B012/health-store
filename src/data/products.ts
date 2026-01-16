@@ -29,7 +29,10 @@ export const products = [
          "Дозировка: 20 мг",
          "Форма выпуска: Лиофилизированный порошок от желтого до зеленовато-желтого цвета для приготовления раствора для инъекций (в упаковке 3 флакона с порошком и 3 ампулы с растворителем)"
       ],
-      image: productImages.inotex_img,
+      image: {
+         src: productImages.inotex_img,
+      },
+
       how_to_take: {
          desc: [""],
          details: [
@@ -118,7 +121,10 @@ export const products = [
          "6 вагинальных суппозиториев",
          "Метронидазол, Нистатин, Неомицин, Дексаметазон и Лидокаин",
       ],
-      image: productImages.fenolive_img,
+      image: {
+         src: productImages.fenolive_img,
+         rotation: "landscape",
+      },
       how_to_take: {
          desc: [""],
          details: [
@@ -273,7 +279,10 @@ export const products = [
          "Не действует на дыхание",
          "Возможно длительное применение",
       ],
-      image: productImages.citikomed_img,
+
+      image: {
+         src: productImages.citikomed_img,
+      },
       how_to_take: {
          desc: [
             "Препарат предназначен для внутривенного и внутримышечного введения.",
@@ -346,7 +355,11 @@ export const products = [
          "10 ректальных суппозиториев",
          "Ломефлоксацин, экстракт простаты",
       ],
-      image: productImages.androprostPlus_img,
+
+      image: {
+         src: productImages.androprostPlus_img,
+         rotation: "landscape",
+      },
       how_to_take: {
          desc: [""],
          details: [
@@ -511,7 +524,10 @@ export const products = [
          "ПРОСТАТА - ВТОРОЕ СЕРДЦЕ МУЖЧИНЫ",
          "Предстательная железа – одна из самых важных частей мужской репродуктивной системы. Именно она во многом отвечает за фертильность человека. Простата представляет собой непарный железисто-мышечный орган. Основная функция заключается в выработке секрета, являющегося питательной средой для сперматозоидов, т.е. обеспечивает жизнеспособность сперматозоидов, во многом предопределяя детородную функцию мужчин. Важной ролью простаты является активация мужского полового гормона тестостерона, что непосредственно влияет на качество половой функции."
       ],
-      image: productImages.androsan_img,
+
+      image: {
+         src: productImages.androsan_img,
+      },
       how_to_take: {
          desc: [""],
          details: [
@@ -701,7 +717,11 @@ export const products = [
       general_desc: [
          "60 Капсул",
       ],
-      image: productImages.viponefron_img,
+
+
+      image: {
+         src: productImages.viponefron_img,
+      },
       how_to_take: {
          desc: [""],
          details: [
@@ -856,7 +876,11 @@ export const products = [
          "Быстрое и полное усвоение",
          "Комплексный эффект",
       ],
-      image: productImages.aminoprom_img,
+
+      image: {
+         src: productImages.aminoprom_img,
+         rotation: "portrait",
+      },
       how_to_take: {
          desc: [""],
          details: [

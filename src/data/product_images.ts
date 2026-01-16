@@ -1,10 +1,14 @@
 import inotex_img from "../assets/product_images/01_Inotex_img.png";
-import fenolive_img from '../assets/product_images/02_Fenolive_img.png';
+import fenolive_img from '../assets/product_images/fenolife_shadow.png';
+
 import citikomed_img from '../assets/product_images/03_Citikomed_img.png';
-import androprostPlus_img from '../assets/product_images/04_Androprost_Plus_img.svg';
+import androprostPlus_img from '../assets/product_images/androprost_shadow.png';
+
 import androsan_img from '../assets/product_images/05_Androsan_img.png';
 import viponefron_img from '../assets/product_images/06_Viponefron_img.png';
-import aminoprom_img from '../assets/product_images/07_Aminoprom_img.png';
+
+import aminoprom_img from '../assets/product_images/aminoprim_shadow.png';
+
 
 export const productImages: { [key: string]: string } = {
    inotex_img: inotex_img,

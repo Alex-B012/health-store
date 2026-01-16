@@ -7,11 +7,20 @@ interface ProductCardProps {
 }
 
 function ProductCard({ product }: ProductCardProps) {
+   let imageRotationClass = '';
+
+   if (product.image && product.image.rotation)
+      imageRotationClass = product.image.rotation;
+
+
    return (
       <div className='product-card'>
          <Link className='product-card__link' to={`/products/${product?.id}`}>
             <div className="product-card__img-container">
-               <img className='product-card__img' src={product?.image} alt={product?.name} />
+               <img className={`product-card__img 
+                  product-card__img--${imageRotationClass}`}
+                  src={product?.image.src}
+                  alt={product?.name} />
             </div>
             <h2 className='product-card__title'>{product?.title_data.name}</h2>
             <p className="product-card__desc">{product?.dosage_form}</p>

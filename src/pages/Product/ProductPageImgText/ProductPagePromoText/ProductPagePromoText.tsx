@@ -1,7 +1,7 @@
 import './productPagePromoText.scss'
 
 interface ProductPagePromoTextProp {
-   text: string,
+   text?: string,
 }
 
 function ProductPagePromoText({ text }: ProductPagePromoTextProp) {

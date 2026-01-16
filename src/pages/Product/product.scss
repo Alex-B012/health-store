@@ -5,12 +5,12 @@
   width: 100%;
   height: 100%;
   @include flex-column-center-center;
-
   &__img-container {
     width: 100%;
-    min-height: 100vh;
+    min-height: 160vh;
     @include flex-column-center-center;
     justify-content: flex-start;
+    gap: 10vh 0;
     margin-top: -155px;
     @include product-gradient-bg(
       $white-color,
@@ -19,5 +19,31 @@
       $footer-blue,
       $white-color
     );
+
+    background-color: coral;
+  }
+}
+
+@media screen and (min-width: 320px) and (min-height: 568px) {
+  .product-page {
+    &__img-container {
+      min-height: 100vh;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) and (min-height: 300px) {
+  .product-page {
+    &__img-container {
+      gap: 20vh 0;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) and (min-height: 800px) {
+  .product-page {
+    &__img-container {
+      gap: 10vh 0;
+    }
   }
 }

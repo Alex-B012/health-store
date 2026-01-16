@@ -5,8 +5,10 @@
   width: 100%;
   margin-top: 150px;
   @include flex-column-center-center;
+  gap: 3vh 0;
   color: $white-color;
   font-weight: $product-page-titles-font-weight;
+  z-index: 2;
 
   &__title {
     width: 100%;
@@ -105,20 +107,35 @@
   }
 }
 
-//width and height
-@media screen and (min-width: 550px) and (min-height: 300px) {
+@media screen and (min-width: 992px) and (min-height: 600px) {
   .product-page-titles {
     &__title {
-      font-size: 10vh;
-      line-height: 11vh;
+      margin: 10vh 0;
+      font-size: 90px;
+      line-height: 96px;
+    }
+
+    &__subtitle {
+      display: none;
+    }
+  }
+}
+
+// width and height
+@media screen and (min-width: 550px) and (min-height: 300px) {
+  .product-page-titles {
+    gap: 5vh 0;
+    &__title {
+      font-size: 9vw;
+      line-height: 10vw;
     }
 
     &__subtitle {
       width: 100%;
-      padding: 0 2%;
-      margin: 0.5vh 0;
-      font-size: 6.5vh;
-      line-height: 7.5vh;
+      padding: 10vh 2%;
+      margin: 1vh 0;
+      font-size: 5.5vw;
+      line-height: 6.5vw;
       z-index: 3;
     }
   }
