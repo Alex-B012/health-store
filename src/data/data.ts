@@ -5,7 +5,11 @@ export const profileData = {
    name: "AKIS Pharma",
    name_line1: "AKIS",
    name_line2: "Pharma",
-   slogan: "Путь к здоровью нации!",
+   slogans: {
+      brand: "Путь к здоровью нации!",
+      slogan_1: "Лучшее для вашего здоровья",
+      slogan_2: "С заботой о вас"
+   },
 
    rights_reserved: {
       line1: "© 2025 Socks Store",
