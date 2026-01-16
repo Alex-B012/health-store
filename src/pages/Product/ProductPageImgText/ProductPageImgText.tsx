@@ -9,7 +9,6 @@ interface ProductPageImgPromoTextProp {
 }
 
 function ProductPageImgPromoText({ img, name, text }: ProductPageImgPromoTextProp) {
-   console.log('Rendering ProductPageImgPromoText with text:', text);
 
    return (
       <div className='product-page-img-text'>

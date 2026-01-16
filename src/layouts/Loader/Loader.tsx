@@ -6,7 +6,6 @@ interface LoaderProps {
 }
 
 function Loader({ isHidden }: LoaderProps) {
-   console.log("Loader isHidden:", isHidden);
    return (
       <div className={`loader ${isHidden ? "loader--hidden" : ""}`}>
          <h2 className='loader__text'>{profileData.name}</h2>
