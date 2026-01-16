@@ -4,7 +4,7 @@ import './App.scss';
 
 import Header from './layouts/Header/Header';
 import Footer from './layouts/Footer/Footer';
-import Loader from './layouts/Loading/Loader';
+import Loader from './layouts/Loader/Loader';
 import { ScrollToTop } from './components/ScrollToTop/ScrollToTop';
 
 const Home = React.lazy(() => import("./pages/Home/Home"));
