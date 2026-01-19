@@ -12,13 +12,20 @@
     object-fit: contain;
 
     &--landscape {
-      margin-top: -30vh;
+      margin-top: -35vh;
       scale: 1;
     }
 
     &--portrait {
-      margin-top: -10vh;
+      margin-top: -15vh;
       scale: 0.7;
+    }
+
+    &--up {
+      margin-top: -30vh;
+      &-androsan {
+        margin-top: -20vh;
+      }
     }
   }
 }
