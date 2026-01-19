@@ -31,7 +31,6 @@
 
   &__img {
     width: 100%;
-
     object-fit: contain;
 
     &--landscape {
@@ -40,6 +39,17 @@
 
     &--portrait {
       scale: 0.7;
+      margin-top: -15px;
+    }
+
+    &--scale {
+      scale: 0.75;
+      margin-top: -50px;
+    }
+
+    &--scale-androsan {
+      scale: 0.9;
+      margin-top: -20px;
     }
   }
 
