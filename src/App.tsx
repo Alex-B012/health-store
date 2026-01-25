@@ -1,13 +1,14 @@
-import { Route, Routes } from 'react-router-dom';
-import React, { Suspense, useCallback, useState } from 'react';
-import './App.scss';
+import { Route, Routes } from "react-router-dom";
+import React, { Suspense, useCallback, useState } from "react";
+import "./App.scss";
 
-import Header from './layouts/Header/Header';
-import Footer from './layouts/Footer/Footer';
-import Loader from './layouts/Loader/Loader';
-import { ScrollToTop } from './components/ScrollToTop/ScrollToTop';
+import Header from "./layouts/Header/Header";
+import Footer from "./layouts/Footer/Footer";
+import Loader from "./layouts/Loader/Loader";
+import { ScrollToTop } from "./components/ScrollToTop/ScrollToTop";
 
 const Home = React.lazy(() => import("./pages/Home/Home"));
+const About = React.lazy(() => import("./pages/About/About"));
 const Product = React.lazy(() => import("./pages/Product/Product"));
 const NotFound = React.lazy(() => import("./pages/NotFound/NotFound"));
 
@@ -26,15 +27,10 @@ function App() {
       <main className="main-content">
         <Suspense fallback={null}>
           <Routes>
-            <Route path="/" element={
-              <Home />
-            } />
-            <Route path="/products/:id" element={
-              <Product />
-            } />
-            <Route path="*" element={
-              <NotFound />
-            } />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/products/:id" element={<Product />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
       </main>

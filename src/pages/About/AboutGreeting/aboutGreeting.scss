@@ -1,0 +1,123 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.about-greeting {
+  width: 100%;
+  height: 100%;
+
+  &-container {
+    width: 100%;
+    min-height: 100vh;
+    @include flex-column-center-center;
+    gap: 0vh 0;
+    margin-top: -100px;
+    @include product-gradient-bg(
+      $greeting-gradient-corner1,
+      $greeting-gradient-corner2,
+      $greeting-gradient-corner3,
+      $greeting-gradient-corner4,
+      $greeting-gradient-corner5
+    );
+
+    .logo-full {
+      margin-top: 15vh;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .about-greeting {
+    &-container {
+      .logo-full {
+        margin-top: 20vh;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .about-greeting {
+    &-container {
+      //       gap: 2vh 0;
+    }
+  }
+}
+
+// HEIGHT
+@media screen and (min-height: 600px) {
+  .about-greeting {
+    &-container {
+      gap: 5vh 0;
+      .logo-full {
+        margin-top: 10vh;
+      }
+    }
+  }
+}
+
+@media screen and (min-height: 700px) {
+  .about-greeting {
+    &-container {
+      gap: 10vh 0;
+      .logo-full {
+        margin-top: 0vh;
+      }
+    }
+  }
+}
+
+// WIDTH & HEIGHT
+
+@media screen and (min-width: 450px) and (min-height: 300px) {
+  .about-greeting {
+    &-container {
+      gap: 10vh 0;
+      .logo-full {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 650px) and (min-height: 400px) {
+  .about-greeting {
+    &-container {
+      gap: 0;
+      .logo-full {
+        display: flex;
+        margin-top: 20vh;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 650px) and (min-height: 500px) {
+  .about-greeting {
+    &-container {
+      .logo-full {
+        margin-top: 15vh;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 650px) and (min-height: 600px) {
+  .about-greeting {
+    &-container {
+      .logo-full {
+        margin-top: 0vh;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 700px) and (min-height: 992px) {
+  .about-greeting {
+    &-container {
+      gap: 20vh 0;
+      .logo-full {
+        margin-top: 0vh;
+      }
+    }
+  }
+}
