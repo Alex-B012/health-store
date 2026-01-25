@@ -1,7 +1,7 @@
-@import "../../../../styles/mixins";
-@import "../../../../styles/variables";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
 
-.product-common-comp {
+.about-common-comp {
   width: 100%;
   @include flex-column-center-center;
   padding: 10px;
@@ -14,14 +14,13 @@
     padding: 10px;
     margin-top: 0px;
     border-radius: 10px;
-    line-height: 17px;
     background-color: $white-color;
     overflow: hidden;
   }
 }
 
 @media screen and (min-width: 400px) {
-  .product-common-comp {
+  .about-common-comp {
     padding: 15px;
 
     &__content {
@@ -31,7 +30,7 @@
 }
 
 @media screen and (min-width: 500px) {
-  .product-common-comp {
+  .about-common-comp {
     padding: 20px;
 
     &__content {
@@ -41,7 +40,7 @@
 }
 
 @media screen and (min-width: 500px) {
-  .product-common-comp {
+  .about-common-comp {
     &__content {
       padding: 20px;
     }
@@ -50,13 +49,13 @@
 
 //width and height
 @media screen and (min-width: 550px) and (min-height: 300px) {
-  .product-common-comp {
+  .about-common-comp {
     margin-bottom: 20px;
   }
 }
 
 @media screen and (min-width: 550px) and (min-height: 500px) {
-  .product-common-comp {
+  .about-common-comp {
     margin-bottom: 33px;
   }
 }

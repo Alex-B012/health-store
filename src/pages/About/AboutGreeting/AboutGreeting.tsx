@@ -6,7 +6,6 @@ function AboutGreeting() {
   return (
     <div className="about-greeting">
       <div className="about-greeting-container">
-        <LogoFull />
         <AboutGreetingSlogan />
       </div>
     </div>

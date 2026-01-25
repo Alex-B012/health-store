@@ -1,0 +1,26 @@
+.about-company-intro {
+  width: 100%;
+  padding: 40px 4vw 20px;
+
+  &__text {
+    margin-bottom: 30px;
+    line-height: 17px;
+    &--bold {
+      font-weight: 700;
+    }
+  }
+  &__points {
+    line-height: 17px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .about-company-intro {
+    padding: 40px 2vw 20px;
+    &__text,
+    &__points {
+      font-size: 17px;
+      line-height: 18px;
+    }
+  }
+}

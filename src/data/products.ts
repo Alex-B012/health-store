@@ -21,7 +21,7 @@ export const products = [
         "Болевой синдром: тендинит, бурсит, радикулит, полиартрит",
         "Купирование боли при остром подагрическом артрите",
       ],
-      properties_img: peopleImages.woman_3_img,
+      properties_img: peopleImages.inotex_knee_img,
     },
     general_desc: [
       "Действующее вещество: Теноксикам",
@@ -116,7 +116,7 @@ export const products = [
         "Трихоцидное",
         "Антибактериальное и противовоспалительное локальное действие",
       ],
-      properties_img: peopleImages.woman_img,
+      properties_img: peopleImages.woman_sunset_img,
     },
     general_desc: [
       "6 вагинальных суппозиториев",
@@ -260,7 +260,7 @@ export const products = [
         "Черепно-мозговая травма, острый и восстановительный период",
         "Вызванные дегенеративными и сосудистыми заболеваниями когнитивные, сенситивные и двигательные расстройства, в том числе, болезни Паркинсона и Альцгеймера",
       ],
-      properties_img: peopleImages.man_senior_img,
+      properties_img: peopleImages.doctor_brain_img,
     },
     general_desc: [
       "ЦИТИКОЛИН 1000 мг/4 мл",
@@ -342,7 +342,7 @@ export const products = [
         "Инфекционно-воспалительный заболевания, вызванные чувствительными к ломефлоксацину микроорганизмами",
         "Состояния до и после оперативного вмешательства на предстательной железе",
       ],
-      properties_img: peopleImages.man_senior2_img,
+      properties_img: peopleImages.doctor_img,
     },
     general_desc: [
       "10 ректальных суппозиториев",
@@ -512,7 +512,7 @@ export const products = [
         "Устраняет и уменьшает функциональные расстройства мочеиспускания – дизурию, поллакиурию, никтурию при заболеваниях предстательной железы",
         "Для увеличения количества и подвижности сперматозоидов, нормализации их структуры; в качестве факторов, влияющих на образование тестостерона, а также гормонов щитовидной железы",
       ],
-      properties_img: peopleImages.man_img,
+      properties_img: peopleImages.androsan_seniors_img,
     },
     general_desc: [
       "На основе растительных экстрактов",
@@ -696,7 +696,7 @@ export const products = [
         "В комплексной терапии недержания мочи у женщин",
         "Улучшает состояние простаты у мужчин",
       ],
-      properties_img: peopleImages.woman_img,
+      properties_img: peopleImages.woman_doctor_img,
     },
     general_desc: ["60 Капсул"],
 
@@ -840,7 +840,7 @@ export const products = [
         "Быстрое и полное усвоение",
         "Комплексный эффект",
       ],
-      properties_img: peopleImages.woman_2_img,
+      properties_img: peopleImages.senior_care_img,
     },
     general_desc: [
       "Раствор для инфузий, 200 мг",
