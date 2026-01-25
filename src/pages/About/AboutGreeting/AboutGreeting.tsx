@@ -1,4 +1,3 @@
-import LogoFull from "../../../components/LogoFull/LogoFull";
 import "./aboutGreeting.scss";
 import AboutGreetingSlogan from "./AboutGreetingSlogan/AboutGreetingSlogan";
 
