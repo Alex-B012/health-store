@@ -30,13 +30,18 @@ export const companyPromo = {
   ],
 };
 
-export const linksData = [
-  {
+export const linksData = {
+  home: {
     id: 1,
     url: "/",
     name: "Главная",
   },
-];
+  about: {
+    id: 2,
+    url: "/about",
+    name: "О нас",
+  },
+};
 
 export const contactInfo = {
   name: profileData.name,

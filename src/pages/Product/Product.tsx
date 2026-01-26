@@ -13,7 +13,7 @@ import { PharmacologicalDataItem } from "../../types/product";
 import ProductFurtherInformation from "./ProductFurtherInformation/ProductFurtherInformation";
 import ProductSideEffects from "./ProductSideEffects/ProductSideEffects";
 import ProductGeneralDesc from "./ProductGeneralDesc/ProductGeneralDesc";
-import useTabTitle from "../../shared/hooks/useTabTitle";
+import useTabTitleProduct from "../../shared/hooks/useTabTitleProduct";
 
 function Product() {
   const productId = window.location.pathname.split("/").pop();
@@ -31,7 +31,7 @@ function Product() {
   const hasData = <T,>(arr?: T[]): arr is T[] =>
     Array.isArray(arr) && arr.length > 0;
 
-  useTabTitle(product);
+  useTabTitleProduct(product);
 
   return (
     <div className="product-page">
